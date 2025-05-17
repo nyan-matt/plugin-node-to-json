@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    button {
+      background-color: #18A0FB;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 8px 16px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-bottom: 16px;
+    }
+    
+    button:hover {
+      background-color: #0D8DE3;
+    }
+    
+    button:disabled {
+      background-color: #CCCCCC;
+      cursor: not-allowed;
+    }
+    
+    .download-btn {
+      background-color: #43A047;
+      margin-left: 8px;
+    }
+    
+    .download-btn:hover {
+      background-color: #388E3C;
+    }
+    
+    #json-preview {
+      width: 100%;
+      height: 400px;
+      border: 1px solid #E0E0E0;
+      border-radius: 4px;
+      padding: 8px;
+      font-family: monospace;
+      font-size: 12px;
+      overflow: auto;
+      white-space: pre;
+      margin-top: 12px;
+    }
+    
+    .actions {
+      display: flex;
+    }
+    
+    .error {
+      color: #D32F2F;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div id="error-message" class="error" style="display: none;"></div>
+  
+  <div class="actions">
+    <button id="get-json-btn">Get JSON</button>
+    <button id="download-btn" class="download-btn" disabled>Download JSON</button>
+  </div>
+  
+  <pre id="json-preview"></pre>
+
+  <script>
+    let nodeData = null;
+    const getJsonBtn = document.getElementById('get-json-btn');
+    const downloadBtn = document.getElementById('download-btn');
+    const jsonPreview = document.getElementById('json-preview');
+    const errorMessage = document.getElementById('error-message');
+    
+    // Request node data from the plugin code
+    getJsonBtn.onclick = () => {
+      errorMessage.style.display = 'none';
+      jsonPreview.textContent = 'Loading...';
+      downloadBtn.disabled = true;
+      parent.postMessage({ pluginMessage: { type: 'get-selected-node' } }, '*');
+    };
+    
+    // Listen for messages from the plugin code
+    window.onmessage = (event) => {
+      const message = event.data.pluginMessage;
+      
+      if (!message) return;
+      
+      if (message.type === 'node-data') {
+        // Display the JSON data in the preview
+        nodeData = message.data;
+        const formattedJson = JSON.stringify(nodeData, null, 2);
+        jsonPreview.textContent = formattedJson;
+        downloadBtn.disabled = false;
+      }
+      
+      if (message.type === 'error') {
+        // Display error message
+        errorMessage.textContent = message.message;
+        errorMessage.style.display = 'block';
+        jsonPreview.textContent = '';
+        downloadBtn.disabled = true;
+      }
+    };
+    
+    // Handle download button click
+    downloadBtn.onclick = () => {
+      if (!nodeData) return;
+      
+      const fileName = `${nodeData.name || 'figma-node'}.json`;
+      const jsonString = JSON.stringify(nodeData, null, 2);
+      const blob = new Blob([jsonString], { type: 'application/json' });
+      
+      // Create a download link and trigger it
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+  </script>
+</body>
+</html>
