@@ -2,7 +2,7 @@
 // This file handles the Figma plugin logic
 figma.showUI(__html__, { width: 450, height: 550 });
 // Listen for messages from the UI
-figma.ui.onmessage = async (msg) => {
+figma.ui.onmessage = (msg) => {
     if (msg.type === 'get-selected-node') {
         // Get the current selection
         const selection = figma.currentPage.selection;
@@ -25,7 +25,7 @@ figma.ui.onmessage = async (msg) => {
         // Get selected node
         const selectedNode = selection[0];
         // Convert node to JSON representation
-        const nodeJson = await serializeNode(selectedNode);
+        const nodeJson = serializeNode(selectedNode);
         // Send data back to UI
         figma.ui.postMessage({
             type: 'node-data',
@@ -33,37 +33,8 @@ figma.ui.onmessage = async (msg) => {
         });
     }
 };
-// Function to enhance INSTANCE_SWAP properties with actual node info
-async function enhanceInstanceSwapProps(componentProperties) {
-    const enhancedProps = {};
-    for (const [key, prop] of Object.entries(componentProperties)) {
-        // Copy the original property
-        enhancedProps[key] = Object.assign({}, prop);
-        // If it's an INSTANCE_SWAP, get the actual instance
-        if (prop.type === 'INSTANCE_SWAP' && prop.value) {
-            try {
-                // Use the value as the ID to lookup the actual instance
-                const swappedInstance = await figma.getNodeByIdAsync(prop.value);
-                if (swappedInstance && swappedInstance.type === 'INSTANCE') {
-                    const instance = swappedInstance;
-                    // Add the actual instance info to our enhanced properties
-                    enhancedProps[key].instanceInfo = {
-                        id: instance.id,
-                        name: instance.name,
-                        componentProperties: instance.componentProperties
-                    };
-                }
-            }
-            catch (error) {
-                console.error(`Error looking up instance for ${key}:`, error);
-            }
-        }
-    }
-    console.log(enhancedProps);
-    return enhancedProps;
-}
 // Helper function to serialize a node and its children to a plain object
-async function serializeNode(node) {
+function serializeNode(node) {
     // Create a base object with common properties
     const obj = {
         id: node.id,
@@ -74,12 +45,10 @@ async function serializeNode(node) {
     if ('visible' in node) {
         obj.visible = node.visible;
     }
-    // Handle INSTANCE nodes specially - include componentProperties and children
+    // Handle INSTANCE nodes specially - only include componentProperties, skip children
     if (node.type === 'INSTANCE') {
         const instanceNode = node;
-        // Get enhanced component properties with instance swap info
-        const enhancedProps = await enhanceInstanceSwapProps(instanceNode.componentProperties);
-        obj.componentProperties = enhancedProps;
+        obj.componentProperties = instanceNode.componentProperties;
         // Auto layout mode
         obj.layoutMode = instanceNode.layoutMode;
         obj.layoutSizingHorizontal = instanceNode.layoutSizingHorizontal;
@@ -87,9 +56,7 @@ async function serializeNode(node) {
         // Add position and dimension properties
         obj.width = instanceNode.width;
         obj.height = instanceNode.height;
-        // Process children for instance nodes
-        const childPromises = instanceNode.children.map(child => serializeNode(child));
-        obj.children = await Promise.all(childPromises);
+        // Return early - don't process children for instances
         return obj;
     }
     // Handle FRAME nodes specially to capture auto layout properties
@@ -114,15 +81,13 @@ async function serializeNode(node) {
         obj.height = frameNode.height;
         obj.fills = frameNode.fills;
         // Process children
-        const childPromises = frameNode.children.map(child => serializeNode(child));
-        obj.children = await Promise.all(childPromises);
+        obj.children = frameNode.children.map(child => serializeNode(child));
         return obj;
     }
     // For non-instance nodes that have children, process them
     if ('children' in node) {
         const parentNode = node;
-        const childPromises = (parentNode.children || []).map(child => serializeNode(child));
-        obj.children = await Promise.all(childPromises);
+        obj.children = (parentNode.children || []).map(child => serializeNode(child));
         if ('width' in parentNode) {
             obj.width = parentNode.width;
             obj.height = parentNode.height;
