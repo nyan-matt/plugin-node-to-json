@@ -21,6 +21,20 @@ interface ComponentProperty {
   };
 }
 
+interface VariableAlias {
+  type: 'VARIABLE_ALIAS';
+  id: string;
+  variableName?: string;
+}
+
+interface BoundVariables {
+  color?: VariableAlias;
+}
+
+type PropertyWithVariables = Paint & {
+  boundVariables?: BoundVariables;
+}
+
 // Listen for messages from the UI
 figma.ui.onmessage = async (msg) => {
   if (msg.type === 'get-selected-node') {
@@ -154,7 +168,11 @@ async function serializeNode(node: BaseNode): Promise<SerializedNode> {
     obj.width = frameNode.width;
     obj.minWidth = frameNode.minWidth;
     obj.height = frameNode.height;
-    obj.fills = frameNode.fills;
+    
+    // Enhance fills if they exist
+    if (frameNode.fills) {
+      obj.fills = await enhancePropertyArray(frameNode.fills as Paint[]);
+    }
     
     // Process children
     const childPromises = frameNode.children.map(child => serializeNode(child));
@@ -238,4 +256,40 @@ async function enhanceInstanceSwapProps(
   
   console.log('Final enhanced props:', enhancedProps);
   return enhancedProps;
+}
+
+// Function to enhance properties that might have variable references
+async function enhanceVariableReferences(propertyValue: PropertyWithVariables): Promise<Paint> {
+  // If not an object or no boundVariables, return as is
+  if (!propertyValue || typeof propertyValue !== 'object' || !propertyValue.boundVariables) {
+    return propertyValue;
+  }
+
+  // Create a new object that preserves the original structure
+  const result = JSON.parse(JSON.stringify(propertyValue));
+
+  // If there are boundVariables with a color variable reference
+  if (propertyValue.boundVariables?.color?.type === 'VARIABLE_ALIAS' && 
+      propertyValue.boundVariables.color.id) {
+    try {
+      const variable = await figma.variables.getVariableByIdAsync(propertyValue.boundVariables.color.id);
+      if (variable) {
+        console.log(`Found variable with name:`, variable.name);
+        // Add the variable name to the result
+        if (result.boundVariables?.color) {
+          result.boundVariables.color.variableName = variable.name;
+        }
+      }
+    } catch (error) {
+      console.error(`Error looking up variable:`, error);
+    }
+  }
+
+  return result as Paint;
+}
+
+// Helper function to enhance an array of properties
+async function enhancePropertyArray(properties: Paint[]): Promise<Paint[]> {
+  if (!Array.isArray(properties)) return properties;
+  return await Promise.all(properties.map(prop => enhanceVariableReferences(prop as PropertyWithVariables)));
 }
