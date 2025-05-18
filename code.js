@@ -2,7 +2,7 @@
 // This file handles the Figma plugin logic
 figma.showUI(__html__, { width: 450, height: 550 });
 // Listen for messages from the UI
-figma.ui.onmessage = (msg) => {
+figma.ui.onmessage = async (msg) => {
     if (msg.type === 'get-selected-node') {
         // Get the current selection
         const selection = figma.currentPage.selection;
@@ -25,7 +25,7 @@ figma.ui.onmessage = (msg) => {
         // Get selected node
         const selectedNode = selection[0];
         // Convert node to JSON representation
-        const nodeJson = serializeNode(selectedNode);
+        const nodeJson = await serializeNode(selectedNode);
         // Send data back to UI
         figma.ui.postMessage({
             type: 'node-data',
@@ -34,7 +34,7 @@ figma.ui.onmessage = (msg) => {
     }
 };
 // Helper function to serialize a node and its children to a plain object
-function serializeNode(node) {
+async function serializeNode(node) {
     // Create a base object with common properties
     const obj = {
         id: node.id,
@@ -48,7 +48,8 @@ function serializeNode(node) {
     // Handle INSTANCE nodes specially - only include componentProperties, skip children
     if (node.type === 'INSTANCE') {
         const instanceNode = node;
-        obj.componentProperties = instanceNode.componentProperties;
+        // Get enhanced component properties with instance swap info
+        obj.componentProperties = await enhanceInstanceSwapProps(instanceNode.componentProperties);
         // Auto layout mode
         obj.layoutMode = instanceNode.layoutMode;
         obj.layoutSizingHorizontal = instanceNode.layoutSizingHorizontal;
@@ -81,13 +82,15 @@ function serializeNode(node) {
         obj.height = frameNode.height;
         obj.fills = frameNode.fills;
         // Process children
-        obj.children = frameNode.children.map(child => serializeNode(child));
+        const childPromises = frameNode.children.map(child => serializeNode(child));
+        obj.children = await Promise.all(childPromises);
         return obj;
     }
     // For non-instance nodes that have children, process them
     if ('children' in node) {
         const parentNode = node;
-        obj.children = (parentNode.children || []).map(child => serializeNode(child));
+        const childPromises = (parentNode.children || []).map(child => serializeNode(child));
+        obj.children = await Promise.all(childPromises);
         if ('width' in parentNode) {
             obj.width = parentNode.width;
             obj.height = parentNode.height;
@@ -113,4 +116,39 @@ function serializeNode(node) {
         obj.y = textNode.y;
     }
     return obj;
+}
+// Function to enhance INSTANCE_SWAP properties with actual node info
+async function enhanceInstanceSwapProps(componentProperties) {
+    var _a;
+    const enhancedProps = {};
+    for (const [key, prop] of Object.entries(componentProperties)) {
+        // Copy the original property
+        enhancedProps[key] = Object.assign({}, prop);
+        console.log(`Processing property ${key}:`, prop);
+        // If it's an INSTANCE_SWAP, get the actual instance
+        if (prop.type === 'INSTANCE_SWAP' && prop.value) {
+            console.log(`Found INSTANCE_SWAP with value:`, prop.value);
+            try {
+                // Use the value as the ID to lookup the actual component
+                const swappedComponent = await figma.getNodeByIdAsync(prop.value);
+                console.log(`Found swapped component:`, swappedComponent === null || swappedComponent === void 0 ? void 0 : swappedComponent.type, swappedComponent === null || swappedComponent === void 0 ? void 0 : swappedComponent.id);
+                if (swappedComponent && swappedComponent.type === 'COMPONENT') {
+                    const component = swappedComponent;
+                    const propInfo = {
+                        id: component.id,
+                        name: component.name,
+                        parentName: ((_a = component.parent) === null || _a === void 0 ? void 0 : _a.name) || null
+                    };
+                    console.log(`Adding prop info for ${key}:`, propInfo);
+                    // Add the prop info to our enhanced properties
+                    enhancedProps[key].propInfo = propInfo;
+                }
+            }
+            catch (error) {
+                console.error(`Error looking up component for ${key}:`, error);
+            }
+        }
+    }
+    console.log('Final enhanced props:', enhancedProps);
+    return enhancedProps;
 }
