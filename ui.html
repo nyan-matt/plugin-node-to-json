@@ -36,6 +36,15 @@
     .download-btn:hover {
       background-color: #388E3C;
     }
+
+    .fixture-btn {
+      background-color: #6D4C41;
+      margin-left: 8px;
+    }
+
+    .fixture-btn:hover {
+      background-color: #5D4037;
+    }
     
     #json-preview {
       width: 100%;
@@ -66,6 +75,7 @@
   <div class="actions">
     <button id="get-json-btn">Get JSON</button>
     <button id="download-btn" class="download-btn" disabled>Download JSON</button>
+    <button id="export-fixture-btn" class="fixture-btn">Export Fixture</button>
   </div>
   
   <pre id="json-preview"></pre>
@@ -74,6 +84,7 @@
     let nodeData = null;
     const getJsonBtn = document.getElementById('get-json-btn');
     const downloadBtn = document.getElementById('download-btn');
+    const exportFixtureBtn = document.getElementById('export-fixture-btn');
     const jsonPreview = document.getElementById('json-preview');
     const errorMessage = document.getElementById('error-message');
     
@@ -98,6 +109,13 @@
         jsonPreview.textContent = formattedJson;
         downloadBtn.disabled = false;
       }
+
+      if (message.type === 'fixture-data') {
+        const fixtureData = message.data;
+        const fileName = message.fileName || 'selection.fixture.json';
+        downloadJson(fileName, fixtureData);
+        jsonPreview.textContent = `Fixture exported: ${fileName}`;
+      }
       
       if (message.type === 'error') {
         // Display error message
@@ -111,19 +129,28 @@
     // Handle download button click
     downloadBtn.onclick = () => {
       if (!nodeData) return;
-      
+
       const fileName = `${nodeData.name || 'figma-node'}.json`;
-      const jsonString = JSON.stringify(nodeData, null, 2);
+      downloadJson(fileName, nodeData);
+    };
+
+    exportFixtureBtn.onclick = () => {
+      errorMessage.style.display = 'none';
+      jsonPreview.textContent = 'Exporting fixture...';
+      parent.postMessage({ pluginMessage: { type: 'export-fixture' } }, '*');
+    };
+
+    function downloadJson(fileName, data) {
+      const jsonString = JSON.stringify(data, null, 2);
       const blob = new Blob([jsonString], { type: 'application/json' });
-      
-      // Create a download link and trigger it
+
       const link = document.createElement('a');
       link.href = URL.createObjectURL(blob);
       link.download = fileName;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-    };
+    }
   </script>
 </body>
 </html>

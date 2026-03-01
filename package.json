@@ -7,7 +7,10 @@
     "build": "tsc -p tsconfig.json",
     "lint": "eslint --ext .ts,.tsx --ignore-pattern node_modules .",
     "lint:fix": "eslint --ext .ts,.tsx --ignore-pattern node_modules --fix .",
-    "watch": "npm run build -- --watch"
+    "watch": "npm run build -- --watch",
+    "blueprint:fixture": "node scripts/blueprint-from-fixture.mjs",
+    "test:blueprint": "node scripts/test-blueprint-snapshots.mjs",
+    "audit:blueprint": "node scripts/audit-blueprint-classification.mjs"
   },
   "author": "",
   "license": "",

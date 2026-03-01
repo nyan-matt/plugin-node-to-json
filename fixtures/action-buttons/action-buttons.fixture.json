@@ -1,0 +1,339 @@
+{
+  "generatedAt": "2026-02-28T19:06:36.836Z",
+  "profile": "implement",
+  "settings": {
+    "includeLayout": true,
+    "includeProps": true,
+    "includeObservedText": true,
+    "includeNestedInventory": true,
+    "includeVariableBindings": false,
+    "excludeNamePatterns": [
+      "AppShell",
+      "SideNav"
+    ]
+  },
+  "selectionNode": {
+    "id": "8003:19523",
+    "name": "Action-buttons",
+    "type": "FRAME",
+    "visible": true,
+    "layoutMode": "HORIZONTAL",
+    "layoutSizingHorizontal": "FIXED",
+    "layoutSizingVertical": "HUG",
+    "primaryAxisAlignItems": "MAX",
+    "counterAxisAlignItems": "CENTER",
+    "layoutWrap": "NO_WRAP",
+    "paddingLeft": 0,
+    "paddingRight": 0,
+    "paddingTop": 0,
+    "paddingBottom": 0,
+    "itemSpacing": 8,
+    "layoutGrids": [],
+    "width": 934.4000244140625,
+    "minWidth": null,
+    "height": 32,
+    "fills": [],
+    "children": [
+      {
+        "id": "8003:19524",
+        "name": "Button",
+        "type": "INSTANCE",
+        "visible": true,
+        "componentProperties": {
+          "Icon-left type#698:31": {
+            "type": "INSTANCE_SWAP",
+            "value": "2203:687",
+            "preferredValues": [],
+            "propInfo": {
+              "id": "2203:687",
+              "name": "Style=Regular",
+              "parentName": "arrows-up-down-left-right"
+            }
+          },
+          "Button text#1047:0": {
+            "type": "TEXT",
+            "value": "Cut"
+          },
+          "Icon right type#698:93": {
+            "type": "INSTANCE_SWAP",
+            "value": "2204:808",
+            "preferredValues": [],
+            "propInfo": {
+              "id": "2204:808",
+              "name": "Style=Solid",
+              "parentName": "caret-down"
+            }
+          },
+          "Show icon right#698:62": {
+            "type": "BOOLEAN",
+            "value": false
+          },
+          "Show icon left#698:0": {
+            "type": "BOOLEAN",
+            "value": false
+          },
+          "Type": {
+            "value": "Secondary",
+            "type": "VARIANT",
+            "boundVariables": {}
+          },
+          "State": {
+            "value": "Disabled",
+            "type": "VARIANT",
+            "boundVariables": {}
+          },
+          "Size": {
+            "value": "Regular",
+            "type": "VARIANT",
+            "boundVariables": {}
+          }
+        },
+        "layoutMode": "HORIZONTAL",
+        "layoutSizingHorizontal": "HUG",
+        "layoutSizingVertical": "FIXED",
+        "width": 55,
+        "height": 32
+      },
+      {
+        "id": "8003:19525",
+        "name": "Button",
+        "type": "INSTANCE",
+        "visible": true,
+        "componentProperties": {
+          "Icon-left type#698:31": {
+            "type": "INSTANCE_SWAP",
+            "value": "2203:687",
+            "preferredValues": [],
+            "propInfo": {
+              "id": "2203:687",
+              "name": "Style=Regular",
+              "parentName": "arrows-up-down-left-right"
+            }
+          },
+          "Button text#1047:0": {
+            "type": "TEXT",
+            "value": "Copy"
+          },
+          "Icon right type#698:93": {
+            "type": "INSTANCE_SWAP",
+            "value": "2204:808",
+            "preferredValues": [],
+            "propInfo": {
+              "id": "2204:808",
+              "name": "Style=Solid",
+              "parentName": "caret-down"
+            }
+          },
+          "Show icon right#698:62": {
+            "type": "BOOLEAN",
+            "value": false
+          },
+          "Show icon left#698:0": {
+            "type": "BOOLEAN",
+            "value": false
+          },
+          "Type": {
+            "value": "Secondary",
+            "type": "VARIANT",
+            "boundVariables": {}
+          },
+          "State": {
+            "value": "Disabled",
+            "type": "VARIANT",
+            "boundVariables": {}
+          },
+          "Size": {
+            "value": "Regular",
+            "type": "VARIANT",
+            "boundVariables": {}
+          }
+        },
+        "layoutMode": "HORIZONTAL",
+        "layoutSizingHorizontal": "HUG",
+        "layoutSizingVertical": "FIXED",
+        "width": 67,
+        "height": 32
+      },
+      {
+        "id": "8003:19526",
+        "name": "Button",
+        "type": "INSTANCE",
+        "visible": true,
+        "componentProperties": {
+          "Icon-left type#698:31": {
+            "type": "INSTANCE_SWAP",
+            "value": "2203:687",
+            "preferredValues": [],
+            "propInfo": {
+              "id": "2203:687",
+              "name": "Style=Regular",
+              "parentName": "arrows-up-down-left-right"
+            }
+          },
+          "Button text#1047:0": {
+            "type": "TEXT",
+            "value": "Delete"
+          },
+          "Icon right type#698:93": {
+            "type": "INSTANCE_SWAP",
+            "value": "2204:808",
+            "preferredValues": [],
+            "propInfo": {
+              "id": "2204:808",
+              "name": "Style=Solid",
+              "parentName": "caret-down"
+            }
+          },
+          "Show icon right#698:62": {
+            "type": "BOOLEAN",
+            "value": false
+          },
+          "Show icon left#698:0": {
+            "type": "BOOLEAN",
+            "value": false
+          },
+          "Type": {
+            "value": "Secondary",
+            "type": "VARIANT",
+            "boundVariables": {}
+          },
+          "State": {
+            "value": "Disabled",
+            "type": "VARIANT",
+            "boundVariables": {}
+          },
+          "Size": {
+            "value": "Regular",
+            "type": "VARIANT",
+            "boundVariables": {}
+          }
+        },
+        "layoutMode": "HORIZONTAL",
+        "layoutSizingHorizontal": "HUG",
+        "layoutSizingVertical": "FIXED",
+        "width": 74,
+        "height": 32
+      },
+      {
+        "id": "8003:19527",
+        "name": "Button",
+        "type": "INSTANCE",
+        "visible": true,
+        "componentProperties": {
+          "Icon-left type#698:31": {
+            "type": "INSTANCE_SWAP",
+            "value": "2203:687",
+            "preferredValues": [],
+            "propInfo": {
+              "id": "2203:687",
+              "name": "Style=Regular",
+              "parentName": "arrows-up-down-left-right"
+            }
+          },
+          "Button text#1047:0": {
+            "type": "TEXT",
+            "value": "More actions"
+          },
+          "Show icon right#698:62": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "Icon right type#698:93": {
+            "type": "INSTANCE_SWAP",
+            "value": "2204:808",
+            "preferredValues": [],
+            "propInfo": {
+              "id": "2204:808",
+              "name": "Style=Solid",
+              "parentName": "caret-down"
+            }
+          },
+          "Show icon left#698:0": {
+            "type": "BOOLEAN",
+            "value": false
+          },
+          "Type": {
+            "value": "Secondary",
+            "type": "VARIANT",
+            "boundVariables": {}
+          },
+          "State": {
+            "value": "Default",
+            "type": "VARIANT",
+            "boundVariables": {}
+          },
+          "Size": {
+            "value": "Regular",
+            "type": "VARIANT",
+            "boundVariables": {}
+          }
+        },
+        "layoutMode": "HORIZONTAL",
+        "layoutSizingHorizontal": "HUG",
+        "layoutSizingVertical": "FIXED",
+        "width": 139,
+        "height": 32
+      },
+      {
+        "id": "8003:19528",
+        "name": "Button",
+        "type": "INSTANCE",
+        "visible": true,
+        "componentProperties": {
+          "Icon right type#698:93": {
+            "type": "INSTANCE_SWAP",
+            "value": "2204:808",
+            "preferredValues": [],
+            "propInfo": {
+              "id": "2204:808",
+              "name": "Style=Solid",
+              "parentName": "caret-down"
+            }
+          },
+          "Icon-left type#698:31": {
+            "type": "INSTANCE_SWAP",
+            "value": "2203:687",
+            "preferredValues": [],
+            "propInfo": {
+              "id": "2203:687",
+              "name": "Style=Regular",
+              "parentName": "arrows-up-down-left-right"
+            }
+          },
+          "Button text#1047:0": {
+            "type": "TEXT",
+            "value": "Create project"
+          },
+          "Show icon right#698:62": {
+            "type": "BOOLEAN",
+            "value": false
+          },
+          "Show icon left#698:0": {
+            "type": "BOOLEAN",
+            "value": false
+          },
+          "Type": {
+            "value": "Primary",
+            "type": "VARIANT",
+            "boundVariables": {}
+          },
+          "State": {
+            "value": "Default",
+            "type": "VARIANT",
+            "boundVariables": {}
+          },
+          "Size": {
+            "value": "Regular",
+            "type": "VARIANT",
+            "boundVariables": {}
+          }
+        },
+        "layoutMode": "HORIZONTAL",
+        "layoutSizingHorizontal": "HUG",
+        "layoutSizingVertical": "FIXED",
+        "width": 124,
+        "height": 32
+      }
+    ]
+  }
+}

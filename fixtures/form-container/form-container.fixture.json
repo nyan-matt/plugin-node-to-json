@@ -1,0 +1,104 @@
+{
+  "generatedAt": "2026-02-28T00:00:00.000Z",
+  "profile": "implement",
+  "settings": {
+    "includeLayout": true,
+    "includeProps": true,
+    "includeObservedText": true,
+    "includeNestedInventory": true,
+    "includeVariableBindings": false,
+    "excludeNamePatterns": ["AppShell", "SideNav"]
+  },
+  "selectionNode": {
+    "id": "10:1",
+    "name": "Form Container",
+    "type": "FRAME",
+    "layoutMode": "VERTICAL",
+    "layoutSizingHorizontal": "FILL",
+    "layoutSizingVertical": "HUG",
+    "primaryAxisAlignItems": "MIN",
+    "counterAxisAlignItems": "STRETCH",
+    "paddingTop": 16,
+    "paddingRight": 16,
+    "paddingBottom": 16,
+    "paddingLeft": 16,
+    "itemSpacing": 12,
+    "children": [
+      {
+        "id": "10:2",
+        "name": "InputField",
+        "type": "INSTANCE",
+        "layoutMode": "NONE",
+        "layoutSizingHorizontal": "FILL",
+        "layoutSizingVertical": "FIXED",
+        "componentProperties": {
+          "Label#1": {
+            "type": "TEXT",
+            "value": "Username"
+          },
+          "State#2": {
+            "type": "VARIANT",
+            "value": "Default"
+          }
+        }
+      },
+      {
+        "id": "10:3",
+        "name": "SelectField",
+        "type": "INSTANCE",
+        "layoutMode": "NONE",
+        "layoutSizingHorizontal": "FILL",
+        "layoutSizingVertical": "FIXED",
+        "componentProperties": {
+          "Label#1": {
+            "type": "TEXT",
+            "value": "Role"
+          },
+          "Value#2": {
+            "type": "TEXT",
+            "value": "Administrator"
+          }
+        }
+      },
+      {
+        "id": "10:4",
+        "name": "ButtonWrapper",
+        "type": "FRAME",
+        "layoutMode": "HORIZONTAL",
+        "layoutSizingHorizontal": "FILL",
+        "layoutSizingVertical": "HUG",
+        "primaryAxisAlignItems": "MAX",
+        "counterAxisAlignItems": "CENTER",
+        "paddingTop": 0,
+        "paddingRight": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "itemSpacing": 8,
+        "children": [
+          {
+            "id": "10:5",
+            "name": "Button",
+            "type": "INSTANCE",
+            "layoutMode": "NONE",
+            "layoutSizingHorizontal": "HUG",
+            "layoutSizingVertical": "HUG",
+            "componentProperties": {
+              "Variant#1": {
+                "type": "VARIANT",
+                "value": "Primary"
+              },
+              "Size#2": {
+                "type": "VARIANT",
+                "value": "Medium"
+              },
+              "Label#3": {
+                "type": "TEXT",
+                "value": "Submit"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

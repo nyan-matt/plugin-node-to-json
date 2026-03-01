@@ -1,0 +1,1152 @@
+{
+  "generatedAt": "2026-02-28T19:09:10.158Z",
+  "profile": "implement",
+  "settings": {
+    "includeLayout": true,
+    "includeProps": true,
+    "includeObservedText": true,
+    "includeNestedInventory": true,
+    "includeVariableBindings": false,
+    "excludeNamePatterns": [
+      "AppShell",
+      "SideNav"
+    ]
+  },
+  "selectionNode": {
+    "id": "8003:13065",
+    "name": "Sign-in-full",
+    "type": "FRAME",
+    "visible": true,
+    "layoutMode": "VERTICAL",
+    "layoutSizingHorizontal": "FIXED",
+    "layoutSizingVertical": "FIXED",
+    "primaryAxisAlignItems": "MIN",
+    "counterAxisAlignItems": "MIN",
+    "layoutWrap": "NO_WRAP",
+    "paddingLeft": 0,
+    "paddingRight": 0,
+    "paddingTop": 0,
+    "paddingBottom": 0,
+    "itemSpacing": 0,
+    "layoutGrids": [],
+    "width": 1440,
+    "minWidth": null,
+    "height": 1024,
+    "fills": [
+      {
+        "type": "SOLID",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 1,
+          "g": 1,
+          "b": 1
+        },
+        "boundVariables": {}
+      }
+    ],
+    "children": [
+      {
+        "id": "8003:13066",
+        "name": "Body",
+        "type": "FRAME",
+        "visible": true,
+        "layoutMode": "HORIZONTAL",
+        "layoutSizingHorizontal": "FILL",
+        "layoutSizingVertical": "FILL",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "layoutWrap": "NO_WRAP",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "itemSpacing": 0,
+        "layoutGrids": [],
+        "width": 1440,
+        "minWidth": null,
+        "height": 1024,
+        "fills": [],
+        "children": [
+          {
+            "id": "8003:13067",
+            "name": "Left Side",
+            "type": "FRAME",
+            "visible": true,
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FIXED",
+            "layoutSizingVertical": "FILL",
+            "primaryAxisAlignItems": "CENTER",
+            "counterAxisAlignItems": "MIN",
+            "layoutWrap": "NO_WRAP",
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 16,
+            "paddingBottom": 16,
+            "itemSpacing": 0,
+            "layoutGrids": [],
+            "width": 610,
+            "minWidth": null,
+            "height": 1024,
+            "fills": [],
+            "children": [
+              {
+                "id": "8003:13068",
+                "name": "Main Form",
+                "type": "FRAME",
+                "visible": true,
+                "layoutMode": "VERTICAL",
+                "layoutSizingHorizontal": "FILL",
+                "layoutSizingVertical": "FILL",
+                "primaryAxisAlignItems": "CENTER",
+                "counterAxisAlignItems": "MIN",
+                "layoutWrap": "NO_WRAP",
+                "paddingLeft": 64,
+                "paddingRight": 64,
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "itemSpacing": 0,
+                "layoutGrids": [],
+                "width": 610,
+                "minWidth": null,
+                "height": 924,
+                "fills": [],
+                "children": [
+                  {
+                    "id": "8003:13069",
+                    "name": "WELCOME TO SIGN IN",
+                    "type": "FRAME",
+                    "visible": true,
+                    "layoutMode": "HORIZONTAL",
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "HUG",
+                    "primaryAxisAlignItems": "MIN",
+                    "counterAxisAlignItems": "MIN",
+                    "layoutWrap": "NO_WRAP",
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "itemSpacing": 0,
+                    "layoutGrids": [],
+                    "width": 482,
+                    "minWidth": null,
+                    "height": 29,
+                    "fills": [],
+                    "children": [
+                      {
+                        "id": "8003:13070",
+                        "name": "Welcome to",
+                        "type": "TEXT",
+                        "visible": true,
+                        "characters": "Welcome to",
+                        "fontSize": 24,
+                        "fontName": {
+                          "family": "Helvetica Neue",
+                          "style": "Light"
+                        },
+                        "lineHeight": {
+                          "unit": "AUTO"
+                        },
+                        "x": 0,
+                        "y": 0
+                      }
+                    ]
+                  },
+                  {
+                    "id": "8003:13071",
+                    "name": "PRODUCT NAME",
+                    "type": "FRAME",
+                    "visible": true,
+                    "layoutMode": "HORIZONTAL",
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "HUG",
+                    "primaryAxisAlignItems": "MIN",
+                    "counterAxisAlignItems": "MIN",
+                    "layoutWrap": "NO_WRAP",
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 16,
+                    "itemSpacing": 0,
+                    "layoutGrids": [],
+                    "width": 482,
+                    "minWidth": null,
+                    "height": 60,
+                    "fills": [],
+                    "children": [
+                      {
+                        "id": "8003:13072",
+                        "name": "Product™ Descriptor",
+                        "type": "TEXT",
+                        "visible": true,
+                        "characters": "Product™ Descriptor",
+                        "fontSize": 36,
+                        "fontName": {
+                          "family": "Helvetica Neue",
+                          "style": "Medium"
+                        },
+                        "lineHeight": {
+                          "unit": "AUTO"
+                        },
+                        "x": 0,
+                        "y": 0
+                      }
+                    ]
+                  },
+                  {
+                    "id": "8003:13073",
+                    "name": "Divider",
+                    "type": "INSTANCE",
+                    "visible": true,
+                    "componentProperties": {
+                      "Direction": {
+                        "value": "Horizontal",
+                        "type": "VARIANT",
+                        "boundVariables": {}
+                      }
+                    },
+                    "layoutMode": "HORIZONTAL",
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "HUG",
+                    "width": 482,
+                    "height": 1
+                  },
+                  {
+                    "id": "8003:13074",
+                    "name": "FIELDS",
+                    "type": "FRAME",
+                    "visible": true,
+                    "layoutMode": "VERTICAL",
+                    "layoutSizingHorizontal": "FILL",
+                    "layoutSizingVertical": "HUG",
+                    "primaryAxisAlignItems": "CENTER",
+                    "counterAxisAlignItems": "MIN",
+                    "layoutWrap": "NO_WRAP",
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 24,
+                    "paddingBottom": 24,
+                    "itemSpacing": 24,
+                    "layoutGrids": [],
+                    "width": 482,
+                    "minWidth": null,
+                    "height": 472,
+                    "fills": [],
+                    "children": [
+                      {
+                        "id": "8003:13075",
+                        "name": "SIGN IN TO YOUR ACCOUNT",
+                        "type": "FRAME",
+                        "visible": false,
+                        "layoutMode": "HORIZONTAL",
+                        "layoutSizingHorizontal": "FIXED",
+                        "layoutSizingVertical": "HUG",
+                        "primaryAxisAlignItems": "MIN",
+                        "counterAxisAlignItems": "MIN",
+                        "layoutWrap": "NO_WRAP",
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "paddingBottom": 0,
+                        "itemSpacing": 0,
+                        "layoutGrids": [],
+                        "width": 482,
+                        "minWidth": null,
+                        "height": 24,
+                        "fills": [],
+                        "children": [
+                          {
+                            "id": "8003:13076",
+                            "name": "Sign in to your account",
+                            "type": "TEXT",
+                            "visible": true,
+                            "characters": "Sign in to your account",
+                            "fontSize": 20,
+                            "fontName": {
+                              "family": "Helvetica Neue",
+                              "style": "Light"
+                            },
+                            "lineHeight": {
+                              "unit": "AUTO"
+                            },
+                            "x": 0,
+                            "y": 0
+                          }
+                        ]
+                      },
+                      {
+                        "id": "8003:13077",
+                        "name": "Message",
+                        "type": "INSTANCE",
+                        "visible": true,
+                        "componentProperties": {
+                          "Show close icon#2430:532": {
+                            "type": "BOOLEAN",
+                            "value": true
+                          },
+                          "Show call to action#1788:1": {
+                            "type": "BOOLEAN",
+                            "value": false
+                          },
+                          "States": {
+                            "value": "Error red",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                          }
+                        },
+                        "layoutMode": "HORIZONTAL",
+                        "layoutSizingHorizontal": "FILL",
+                        "layoutSizingVertical": "HUG",
+                        "width": 482,
+                        "height": 54
+                      },
+                      {
+                        "id": "8003:13078",
+                        "name": "2FA enabled label",
+                        "type": "FRAME",
+                        "visible": true,
+                        "layoutMode": "HORIZONTAL",
+                        "layoutSizingHorizontal": "FIXED",
+                        "layoutSizingVertical": "HUG",
+                        "primaryAxisAlignItems": "MIN",
+                        "counterAxisAlignItems": "CENTER",
+                        "layoutWrap": "NO_WRAP",
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "paddingBottom": 0,
+                        "itemSpacing": 7,
+                        "layoutGrids": [],
+                        "width": 392,
+                        "minWidth": null,
+                        "height": 24,
+                        "fills": [],
+                        "children": [
+                          {
+                            "id": "8003:13079",
+                            "name": "SectionHeader",
+                            "type": "INSTANCE",
+                            "visible": true,
+                            "componentProperties": {
+                              "Show description#632:8": {
+                                "type": "BOOLEAN",
+                                "value": true
+                              },
+                              "Description#632:7": {
+                                "type": "TEXT",
+                                "value": "Two-factor authentication is currently enabled."
+                              },
+                              "Subheading label#632:6": {
+                                "type": "TEXT",
+                                "value": "Sign into your account"
+                              }
+                            },
+                            "layoutMode": "VERTICAL",
+                            "layoutSizingHorizontal": "FIXED",
+                            "layoutSizingVertical": "FIXED",
+                            "width": 290,
+                            "height": 21
+                          },
+                          {
+                            "id": "8003:13080",
+                            "name": "Tag",
+                            "type": "INSTANCE",
+                            "visible": true,
+                            "componentProperties": {
+                              "Label#4470:84": {
+                                "type": "TEXT",
+                                "value": "2FA"
+                              },
+                              "Show icon#2438:573": {
+                                "type": "BOOLEAN",
+                                "value": true
+                              },
+                              "Style": {
+                                "value": "Muted",
+                                "type": "VARIANT",
+                                "boundVariables": {}
+                              },
+                              "Severity": {
+                                "value": "Success",
+                                "type": "VARIANT",
+                                "boundVariables": {}
+                              },
+                              "Rounded": {
+                                "value": "False",
+                                "type": "VARIANT",
+                                "boundVariables": {}
+                              }
+                            },
+                            "layoutMode": "HORIZONTAL",
+                            "layoutSizingHorizontal": "HUG",
+                            "layoutSizingVertical": "FIXED",
+                            "width": 57.79999923706055,
+                            "height": 24
+                          }
+                        ]
+                      },
+                      {
+                        "id": "8003:13081",
+                        "name": "USername and password",
+                        "type": "FRAME",
+                        "visible": true,
+                        "layoutMode": "VERTICAL",
+                        "layoutSizingHorizontal": "FILL",
+                        "layoutSizingVertical": "HUG",
+                        "primaryAxisAlignItems": "MIN",
+                        "counterAxisAlignItems": "MIN",
+                        "layoutWrap": "NO_WRAP",
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "paddingBottom": 0,
+                        "itemSpacing": 16,
+                        "layoutGrids": [],
+                        "width": 482,
+                        "minWidth": null,
+                        "height": 172,
+                        "fills": [],
+                        "children": [
+                          {
+                            "id": "8003:13082",
+                            "name": "InputText",
+                            "type": "INSTANCE",
+                            "visible": true,
+                            "componentProperties": {
+                              "Left icon#2404:425": {
+                                "type": "INSTANCE_SWAP",
+                                "value": "2218:2663",
+                                "preferredValues": [],
+                                "propInfo": {
+                                  "id": "2218:2663",
+                                  "name": "Style=Solid",
+                                  "parentName": "magnifying-glass"
+                                }
+                              },
+                              "Right icon#2404:432": {
+                                "type": "INSTANCE_SWAP",
+                                "value": "2218:2663",
+                                "preferredValues": [],
+                                "propInfo": {
+                                  "id": "2218:2663",
+                                  "name": "Style=Solid",
+                                  "parentName": "magnifying-glass"
+                                }
+                              },
+                              "Help text label#4640:42": {
+                                "type": "TEXT",
+                                "value": "Helper text label"
+                              },
+                              "Show label#4640:28": {
+                                "type": "BOOLEAN",
+                                "value": true
+                              },
+                              "Show help#4640:35": {
+                                "type": "BOOLEAN",
+                                "value": false
+                              },
+                              "Show right icon#4637:7": {
+                                "type": "BOOLEAN",
+                                "value": false
+                              },
+                              "Show left icon#4637:0": {
+                                "type": "BOOLEAN",
+                                "value": false
+                              },
+                              "Input text#702:207": {
+                                "type": "TEXT",
+                                "value": " "
+                              },
+                              "State": {
+                                "value": "Focus",
+                                "type": "VARIANT",
+                                "boundVariables": {}
+                              }
+                            },
+                            "layoutMode": "VERTICAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "width": 482,
+                            "height": 54
+                          },
+                          {
+                            "id": "8003:13083",
+                            "name": "InputText",
+                            "type": "INSTANCE",
+                            "visible": true,
+                            "componentProperties": {
+                              "Left icon#2404:425": {
+                                "type": "INSTANCE_SWAP",
+                                "value": "2218:2663",
+                                "preferredValues": [],
+                                "propInfo": {
+                                  "id": "2218:2663",
+                                  "name": "Style=Solid",
+                                  "parentName": "magnifying-glass"
+                                }
+                              },
+                              "Help text label#4640:42": {
+                                "type": "TEXT",
+                                "value": "Helper text label"
+                              },
+                              "Show help#4640:35": {
+                                "type": "BOOLEAN",
+                                "value": false
+                              },
+                              "Show label#4640:28": {
+                                "type": "BOOLEAN",
+                                "value": true
+                              },
+                              "Input text#702:207": {
+                                "type": "TEXT",
+                                "value": " "
+                              },
+                              "Show right icon#4637:7": {
+                                "type": "BOOLEAN",
+                                "value": true
+                              },
+                              "Show left icon#4637:0": {
+                                "type": "BOOLEAN",
+                                "value": false
+                              },
+                              "Right icon#2404:432": {
+                                "type": "INSTANCE_SWAP",
+                                "value": "2218:2651",
+                                "preferredValues": [],
+                                "propInfo": {
+                                  "id": "2218:2651",
+                                  "name": "Style=Solid",
+                                  "parentName": "eye-slash"
+                                }
+                              },
+                              "State": {
+                                "value": "Default",
+                                "type": "VARIANT",
+                                "boundVariables": {}
+                              }
+                            },
+                            "layoutMode": "VERTICAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "width": 482,
+                            "height": 54
+                          },
+                          {
+                            "id": "8003:13084",
+                            "name": "BUTTONS",
+                            "type": "FRAME",
+                            "visible": true,
+                            "layoutMode": "HORIZONTAL",
+                            "layoutSizingHorizontal": "FILL",
+                            "layoutSizingVertical": "HUG",
+                            "primaryAxisAlignItems": "SPACE_BETWEEN",
+                            "counterAxisAlignItems": "CENTER",
+                            "layoutWrap": "NO_WRAP",
+                            "paddingLeft": 0,
+                            "paddingRight": 0,
+                            "paddingTop": 0,
+                            "paddingBottom": 0,
+                            "itemSpacing": 16,
+                            "layoutGrids": [],
+                            "width": 482,
+                            "minWidth": null,
+                            "height": 32,
+                            "fills": [],
+                            "children": [
+                              {
+                                "id": "8003:13085",
+                                "name": "Button",
+                                "type": "INSTANCE",
+                                "visible": true,
+                                "componentProperties": {
+                                  "Icon-left type#698:31": {
+                                    "type": "INSTANCE_SWAP",
+                                    "value": "2203:687",
+                                    "preferredValues": [],
+                                    "propInfo": {
+                                      "id": "2203:687",
+                                      "name": "Style=Regular",
+                                      "parentName": "arrows-up-down-left-right"
+                                    }
+                                  },
+                                  "Button text#1047:0": {
+                                    "type": "TEXT",
+                                    "value": "Reset password"
+                                  },
+                                  "Show icon right#698:62": {
+                                    "type": "BOOLEAN",
+                                    "value": false
+                                  },
+                                  "Icon right type#698:93": {
+                                    "type": "INSTANCE_SWAP",
+                                    "value": "2204:808",
+                                    "preferredValues": [],
+                                    "propInfo": {
+                                      "id": "2204:808",
+                                      "name": "Style=Solid",
+                                      "parentName": "caret-down"
+                                    }
+                                  },
+                                  "Show icon left#698:0": {
+                                    "type": "BOOLEAN",
+                                    "value": false
+                                  },
+                                  "Type": {
+                                    "value": "Tertiary",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                  },
+                                  "State": {
+                                    "value": "Default",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                  },
+                                  "Size": {
+                                    "value": "Regular",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                  }
+                                },
+                                "layoutMode": "HORIZONTAL",
+                                "layoutSizingHorizontal": "HUG",
+                                "layoutSizingVertical": "FIXED",
+                                "width": 137,
+                                "height": 32
+                              },
+                              {
+                                "id": "8003:13086",
+                                "name": "Button",
+                                "type": "INSTANCE",
+                                "visible": true,
+                                "componentProperties": {
+                                  "Icon right type#698:93": {
+                                    "type": "INSTANCE_SWAP",
+                                    "value": "2204:808",
+                                    "preferredValues": [],
+                                    "propInfo": {
+                                      "id": "2204:808",
+                                      "name": "Style=Solid",
+                                      "parentName": "caret-down"
+                                    }
+                                  },
+                                  "Icon-left type#698:31": {
+                                    "type": "INSTANCE_SWAP",
+                                    "value": "2203:687",
+                                    "preferredValues": [],
+                                    "propInfo": {
+                                      "id": "2203:687",
+                                      "name": "Style=Regular",
+                                      "parentName": "arrows-up-down-left-right"
+                                    }
+                                  },
+                                  "Button text#1047:0": {
+                                    "type": "TEXT",
+                                    "value": "Sign in"
+                                  },
+                                  "Show icon right#698:62": {
+                                    "type": "BOOLEAN",
+                                    "value": false
+                                  },
+                                  "Show icon left#698:0": {
+                                    "type": "BOOLEAN",
+                                    "value": false
+                                  },
+                                  "Type": {
+                                    "value": "Primary",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                  },
+                                  "State": {
+                                    "value": "Default",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                  },
+                                  "Size": {
+                                    "value": "Regular",
+                                    "type": "VARIANT",
+                                    "boundVariables": {}
+                                  }
+                                },
+                                "layoutMode": "HORIZONTAL",
+                                "layoutSizingHorizontal": "HUG",
+                                "layoutSizingVertical": "FIXED",
+                                "width": 77,
+                                "height": 32
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "8003:13087",
+                        "name": "Secondary Links",
+                        "type": "FRAME",
+                        "visible": true,
+                        "layoutMode": "HORIZONTAL",
+                        "layoutSizingHorizontal": "FILL",
+                        "layoutSizingVertical": "HUG",
+                        "primaryAxisAlignItems": "MIN",
+                        "counterAxisAlignItems": "MIN",
+                        "layoutWrap": "NO_WRAP",
+                        "paddingLeft": 0,
+                        "paddingRight": 0,
+                        "paddingTop": 0,
+                        "paddingBottom": 0,
+                        "itemSpacing": 8,
+                        "layoutGrids": [],
+                        "width": 482,
+                        "minWidth": null,
+                        "height": 30,
+                        "fills": [],
+                        "children": [
+                          {
+                            "id": "8003:13088",
+                            "name": "MenubarLink",
+                            "type": "INSTANCE",
+                            "visible": true,
+                            "componentProperties": {
+                              "Show icon#2424:523": {
+                                "type": "BOOLEAN",
+                                "value": true
+                              },
+                              "Icon#2424:527": {
+                                "type": "INSTANCE_SWAP",
+                                "value": "7695:15783",
+                                "preferredValues": [],
+                                "propInfo": {
+                                  "id": "7695:15783",
+                                  "name": "Style=Regular",
+                                  "parentName": "arrow-up-right-from-square"
+                                }
+                              },
+                              "Show dropdown caret#68:129": {
+                                "type": "BOOLEAN",
+                                "value": false
+                              },
+                              "Label#66:126": {
+                                "type": "TEXT",
+                                "value": "Help with ProductName™ Suite"
+                              },
+                              "State": {
+                                "value": "Default",
+                                "type": "VARIANT",
+                                "boundVariables": {}
+                              }
+                            },
+                            "layoutMode": "HORIZONTAL",
+                            "layoutSizingHorizontal": "HUG",
+                            "layoutSizingVertical": "HUG",
+                            "width": 240,
+                            "height": 30
+                          },
+                          {
+                            "id": "8003:13089",
+                            "name": "MenubarLink",
+                            "type": "INSTANCE",
+                            "visible": true,
+                            "componentProperties": {
+                              "Show icon#2424:523": {
+                                "type": "BOOLEAN",
+                                "value": true
+                              },
+                              "Icon#2424:527": {
+                                "type": "INSTANCE_SWAP",
+                                "value": "7695:15783",
+                                "preferredValues": [],
+                                "propInfo": {
+                                  "id": "7695:15783",
+                                  "name": "Style=Regular",
+                                  "parentName": "arrow-up-right-from-square"
+                                }
+                              },
+                              "Show dropdown caret#68:129": {
+                                "type": "BOOLEAN",
+                                "value": false
+                              },
+                              "Label#66:126": {
+                                "type": "TEXT",
+                                "value": "Sign into SAE"
+                              },
+                              "State": {
+                                "value": "Default",
+                                "type": "VARIANT",
+                                "boundVariables": {}
+                              }
+                            },
+                            "layoutMode": "HORIZONTAL",
+                            "layoutSizingHorizontal": "HUG",
+                            "layoutSizingVertical": "HUG",
+                            "width": 126,
+                            "height": 30
+                          },
+                          {
+                            "id": "8003:13090",
+                            "name": "MenubarLink",
+                            "type": "INSTANCE",
+                            "visible": true,
+                            "componentProperties": {
+                              "Show icon#2424:523": {
+                                "type": "BOOLEAN",
+                                "value": true
+                              },
+                              "Icon#2424:527": {
+                                "type": "INSTANCE_SWAP",
+                                "value": "7737:10033",
+                                "preferredValues": [],
+                                "propInfo": {
+                                  "id": "7737:10033",
+                                  "name": "Style=Regular",
+                                  "parentName": "circle-question"
+                                }
+                              },
+                              "Show dropdown caret#68:129": {
+                                "type": "BOOLEAN",
+                                "value": false
+                              },
+                              "Label#66:126": {
+                                "type": "TEXT",
+                                "value": "Sign in help"
+                              },
+                              "State": {
+                                "value": "Default",
+                                "type": "VARIANT",
+                                "boundVariables": {}
+                              }
+                            },
+                            "layoutMode": "HORIZONTAL",
+                            "layoutSizingHorizontal": "HUG",
+                            "layoutSizingVertical": "HUG",
+                            "width": 114,
+                            "height": 30
+                          }
+                        ]
+                      },
+                      {
+                        "id": "8003:13091",
+                        "name": "Property of MEssage",
+                        "type": "FRAME",
+                        "visible": true,
+                        "layoutMode": "HORIZONTAL",
+                        "layoutSizingHorizontal": "FILL",
+                        "layoutSizingVertical": "HUG",
+                        "primaryAxisAlignItems": "MIN",
+                        "counterAxisAlignItems": "MIN",
+                        "layoutWrap": "NO_WRAP",
+                        "paddingLeft": 16,
+                        "paddingRight": 16,
+                        "paddingTop": 12,
+                        "paddingBottom": 12,
+                        "itemSpacing": 8,
+                        "layoutGrids": [],
+                        "width": 482,
+                        "minWidth": null,
+                        "height": 48,
+                        "fills": [
+                          {
+                            "type": "SOLID",
+                            "visible": true,
+                            "opacity": 1,
+                            "blendMode": "NORMAL",
+                            "color": {
+                              "r": 0.8313725590705872,
+                              "g": 0.929411768913269,
+                              "b": 1
+                            },
+                            "boundVariables": {
+                              "color": {
+                                "type": "VARIABLE_ALIAS",
+                                "id": "VariableID:88a6a6e16a1fb87b134698124981aabfdef883be/13938:203",
+                                "variableName": "color/blue/05"
+                              }
+                            }
+                          }
+                        ],
+                        "children": [
+                          {
+                            "id": "8003:13092",
+                            "name": "circle-info",
+                            "type": "INSTANCE",
+                            "visible": true,
+                            "componentProperties": {
+                              "Style": {
+                                "value": "Solid",
+                                "type": "VARIANT",
+                                "boundVariables": {}
+                              }
+                            },
+                            "layoutMode": "NONE",
+                            "layoutSizingHorizontal": "FIXED",
+                            "layoutSizingVertical": "FIXED",
+                            "width": 24,
+                            "height": 24
+                          },
+                          {
+                            "id": "8003:13093",
+                            "name": "LINE 1",
+                            "type": "TEXT",
+                            "visible": true,
+                            "characters": "Property of the State of Louisiana Crime Lab or whatever",
+                            "fontSize": 14,
+                            "fontName": {
+                              "family": "Helvetica Neue",
+                              "style": "Regular"
+                            },
+                            "lineHeight": {
+                              "unit": "PIXELS",
+                              "value": 22
+                            },
+                            "x": 48,
+                            "y": 12
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "8003:13094",
+                "name": "Regulator messaging",
+                "type": "FRAME",
+                "visible": true,
+                "layoutMode": "VERTICAL",
+                "layoutSizingHorizontal": "FILL",
+                "layoutSizingVertical": "HUG",
+                "primaryAxisAlignItems": "MIN",
+                "counterAxisAlignItems": "MIN",
+                "layoutWrap": "NO_WRAP",
+                "paddingLeft": 16,
+                "paddingRight": 16,
+                "paddingTop": 12,
+                "paddingBottom": 12,
+                "itemSpacing": 0,
+                "layoutGrids": [],
+                "width": 610,
+                "minWidth": null,
+                "height": 68,
+                "fills": [],
+                "children": [
+                  {
+                    "id": "8003:13095",
+                    "name": "LINE 1",
+                    "type": "TEXT",
+                    "visible": true,
+                    "characters": "For Research Use Only. Not for use in diagnostic procedures. \n©️ 2025 Thermo Fisher Scientific. All rights reserved; SAE™",
+                    "fontSize": 14,
+                    "fontName": {
+                      "family": "Helvetica Neue",
+                      "style": "Regular"
+                    },
+                    "lineHeight": {
+                      "unit": "PIXELS",
+                      "value": 22
+                    },
+                    "x": 16,
+                    "y": 12
+                  }
+                ]
+              },
+              {
+                "id": "8003:13096",
+                "name": "Language Switcher",
+                "type": "FRAME",
+                "visible": false,
+                "layoutMode": "HORIZONTAL",
+                "layoutSizingHorizontal": "FIXED",
+                "layoutSizingVertical": "HUG",
+                "primaryAxisAlignItems": "CENTER",
+                "counterAxisAlignItems": "CENTER",
+                "layoutWrap": "NO_WRAP",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "itemSpacing": 0,
+                "layoutGrids": [],
+                "width": 610,
+                "minWidth": null,
+                "height": 22,
+                "fills": [],
+                "children": [
+                  {
+                    "id": "8003:13097",
+                    "name": "English   |  中文 |  Deutsch   |  Français   |  Español   |  Italiano",
+                    "type": "TEXT",
+                    "visible": true,
+                    "characters": " English   |   中文   |  Deutsch   |   Français   |   Español   |   Italiano",
+                    "fontSize": 14,
+                    "fontName": {
+                      "family": "Helvetica Neue",
+                      "style": "Regular"
+                    },
+                    "lineHeight": {
+                      "unit": "PIXELS",
+                      "value": 22
+                    },
+                    "x": 101.5,
+                    "y": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "8003:13098",
+            "name": "Right Side",
+            "type": "FRAME",
+            "visible": true,
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "FILL",
+            "primaryAxisAlignItems": "MIN",
+            "counterAxisAlignItems": "CENTER",
+            "layoutWrap": "NO_WRAP",
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "itemSpacing": 0,
+            "layoutGrids": [],
+            "width": 830,
+            "minWidth": null,
+            "height": 1024,
+            "fills": [
+              {
+                "type": "GRADIENT_LINEAR",
+                "visible": true,
+                "opacity": 1,
+                "blendMode": "NORMAL",
+                "gradientStops": [
+                  {
+                    "color": {
+                      "r": 1,
+                      "g": 1,
+                      "b": 1,
+                      "a": 1
+                    },
+                    "position": 0,
+                    "boundVariables": {}
+                  },
+                  {
+                    "color": {
+                      "r": 1,
+                      "g": 1,
+                      "b": 1,
+                      "a": 0
+                    },
+                    "position": 1,
+                    "boundVariables": {}
+                  }
+                ],
+                "gradientTransform": [
+                  [
+                    6.123234262925839e-17,
+                    1,
+                    0
+                  ],
+                  [
+                    -1,
+                    6.123234262925839e-17,
+                    1
+                  ]
+                ]
+              }
+            ],
+            "children": [
+              {
+                "id": "8003:13099",
+                "name": "Login_splash_screen 2560x1440_QHD-No Logo 1",
+                "type": "RECTANGLE",
+                "visible": true,
+                "width": 830,
+                "height": 1024,
+                "x": 0,
+                "y": 0,
+                "fills": [
+                  {
+                    "type": "IMAGE",
+                    "visible": true,
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "scaleMode": "FILL",
+                    "imageTransform": [
+                      [
+                        1.0000851154327393,
+                        0,
+                        -0.000042581559682730585
+                      ],
+                      [
+                        0,
+                        1,
+                        0
+                      ]
+                    ],
+                    "scalingFactor": 0.5,
+                    "rotation": 0,
+                    "filters": {
+                      "exposure": 0,
+                      "contrast": 0,
+                      "saturation": 0,
+                      "temperature": 0,
+                      "tint": 0,
+                      "highlights": 0,
+                      "shadows": 0
+                    },
+                    "imageHash": "1d5190c1c7d983bf65ea5770497baa907ff74564"
+                  }
+                ],
+                "strokes": []
+              },
+              {
+                "id": "8003:13100",
+                "name": "Applied-Biosystems-Stacked-Endorser-White 1",
+                "type": "RECTANGLE",
+                "visible": true,
+                "width": 248,
+                "height": 119,
+                "x": 82,
+                "y": 826,
+                "fills": [
+                  {
+                    "type": "IMAGE",
+                    "visible": true,
+                    "opacity": 1,
+                    "blendMode": "NORMAL",
+                    "scaleMode": "FILL",
+                    "imageTransform": [
+                      [
+                        1,
+                        0,
+                        0
+                      ],
+                      [
+                        0,
+                        1,
+                        0
+                      ]
+                    ],
+                    "scalingFactor": 0.5,
+                    "rotation": 0,
+                    "filters": {
+                      "exposure": 0,
+                      "contrast": 0,
+                      "saturation": 0,
+                      "temperature": 0,
+                      "tint": 0,
+                      "highlights": 0,
+                      "shadows": 0
+                    },
+                    "imageHash": "2ce147d81f5dd9bc579d73ca297832b44e1322cc"
+                  }
+                ],
+                "strokes": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

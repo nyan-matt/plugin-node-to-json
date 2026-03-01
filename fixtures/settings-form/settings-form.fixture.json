@@ -1,0 +1,617 @@
+{
+  "generatedAt": "2026-02-28T19:08:12.834Z",
+  "profile": "implement",
+  "settings": {
+    "includeLayout": true,
+    "includeProps": true,
+    "includeObservedText": true,
+    "includeNestedInventory": true,
+    "includeVariableBindings": false,
+    "excludeNamePatterns": [
+      "AppShell",
+      "SideNav"
+    ]
+  },
+  "selectionNode": {
+    "id": "8003:17811",
+    "name": "Settings-form",
+    "type": "FRAME",
+    "visible": true,
+    "layoutMode": "VERTICAL",
+    "layoutSizingHorizontal": "FIXED",
+    "layoutSizingVertical": "HUG",
+    "primaryAxisAlignItems": "MIN",
+    "counterAxisAlignItems": "MIN",
+    "layoutWrap": "NO_WRAP",
+    "paddingLeft": 16,
+    "paddingRight": 16,
+    "paddingTop": 16,
+    "paddingBottom": 16,
+    "itemSpacing": 24,
+    "layoutGrids": [],
+    "width": 600,
+    "minWidth": null,
+    "height": 527,
+    "fills": [],
+    "children": [
+      {
+        "id": "8003:17781",
+        "name": "SectionHeader",
+        "type": "INSTANCE",
+        "visible": true,
+        "componentProperties": {
+          "Show description#632:8": {
+            "type": "BOOLEAN",
+            "value": true
+          },
+          "Description#632:7": {
+            "type": "TEXT",
+            "value": "Please fill out the form items below"
+          },
+          "Subheading label#632:6": {
+            "type": "TEXT",
+            "value": "Settings Form"
+          }
+        },
+        "layoutMode": "VERTICAL",
+        "layoutSizingHorizontal": "FILL",
+        "layoutSizingVertical": "HUG",
+        "width": 568,
+        "height": 48
+      },
+      {
+        "id": "8003:17812",
+        "name": "FormContainer",
+        "type": "FRAME",
+        "visible": true,
+        "layoutMode": "VERTICAL",
+        "layoutSizingHorizontal": "FILL",
+        "layoutSizingVertical": "HUG",
+        "primaryAxisAlignItems": "MIN",
+        "counterAxisAlignItems": "MIN",
+        "layoutWrap": "NO_WRAP",
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "itemSpacing": 16,
+        "layoutGrids": [],
+        "width": 568,
+        "minWidth": null,
+        "height": 423,
+        "fills": [],
+        "children": [
+          {
+            "id": "8003:17786",
+            "name": "InputText",
+            "type": "INSTANCE",
+            "visible": true,
+            "componentProperties": {
+              "Right icon#2404:432": {
+                "type": "INSTANCE_SWAP",
+                "value": "2218:2663",
+                "preferredValues": [],
+                "propInfo": {
+                  "id": "2218:2663",
+                  "name": "Style=Solid",
+                  "parentName": "magnifying-glass"
+                }
+              },
+              "Left icon#2404:425": {
+                "type": "INSTANCE_SWAP",
+                "value": "2218:2663",
+                "preferredValues": [],
+                "propInfo": {
+                  "id": "2218:2663",
+                  "name": "Style=Solid",
+                  "parentName": "magnifying-glass"
+                }
+              },
+              "Help text label#4640:42": {
+                "type": "TEXT",
+                "value": "Helper text label"
+              },
+              "Show help#4640:35": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show label#4640:28": {
+                "type": "BOOLEAN",
+                "value": true
+              },
+              "Show right icon#4637:7": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show left icon#4637:0": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Input text#702:207": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "State": {
+                "value": "Placeholder",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "width": 568,
+            "height": 54
+          },
+          {
+            "id": "8003:17876",
+            "name": "InputText",
+            "type": "INSTANCE",
+            "visible": true,
+            "componentProperties": {
+              "Right icon#2404:432": {
+                "type": "INSTANCE_SWAP",
+                "value": "2218:2663",
+                "preferredValues": [],
+                "propInfo": {
+                  "id": "2218:2663",
+                  "name": "Style=Solid",
+                  "parentName": "magnifying-glass"
+                }
+              },
+              "Left icon#2404:425": {
+                "type": "INSTANCE_SWAP",
+                "value": "2218:2663",
+                "preferredValues": [],
+                "propInfo": {
+                  "id": "2218:2663",
+                  "name": "Style=Solid",
+                  "parentName": "magnifying-glass"
+                }
+              },
+              "Help text label#4640:42": {
+                "type": "TEXT",
+                "value": "Helper text label"
+              },
+              "Show help#4640:35": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show label#4640:28": {
+                "type": "BOOLEAN",
+                "value": true
+              },
+              "Show right icon#4637:7": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show left icon#4637:0": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Input text#702:207": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "State": {
+                "value": "Placeholder",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "width": 568,
+            "height": 54
+          },
+          {
+            "id": "8003:17864",
+            "name": "InputText",
+            "type": "INSTANCE",
+            "visible": true,
+            "componentProperties": {
+              "Right icon#2404:432": {
+                "type": "INSTANCE_SWAP",
+                "value": "2218:2663",
+                "preferredValues": [],
+                "propInfo": {
+                  "id": "2218:2663",
+                  "name": "Style=Solid",
+                  "parentName": "magnifying-glass"
+                }
+              },
+              "Left icon#2404:425": {
+                "type": "INSTANCE_SWAP",
+                "value": "2218:2663",
+                "preferredValues": [],
+                "propInfo": {
+                  "id": "2218:2663",
+                  "name": "Style=Solid",
+                  "parentName": "magnifying-glass"
+                }
+              },
+              "Help text label#4640:42": {
+                "type": "TEXT",
+                "value": "Helper text label"
+              },
+              "Show help#4640:35": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show label#4640:28": {
+                "type": "BOOLEAN",
+                "value": true
+              },
+              "Show right icon#4637:7": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show left icon#4637:0": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Input text#702:207": {
+                "type": "TEXT",
+                "value": ""
+              },
+              "State": {
+                "value": "Placeholder",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "width": 568,
+            "height": 54
+          },
+          {
+            "id": "8003:17813",
+            "name": "Dropdown",
+            "type": "INSTANCE",
+            "visible": true,
+            "componentProperties": {
+              "Left icon#2418:446": {
+                "type": "INSTANCE_SWAP",
+                "value": "2207:2429",
+                "preferredValues": [],
+                "propInfo": {
+                  "id": "2207:2429",
+                  "name": "Style=Solid",
+                  "parentName": "circle"
+                }
+              },
+              "Right icon#2418:439": {
+                "type": "INSTANCE_SWAP",
+                "value": "2204:839",
+                "preferredValues": [],
+                "propInfo": {
+                  "id": "2204:839",
+                  "name": "Style=Regular",
+                  "parentName": "chevron-down"
+                }
+              },
+              "Show dismiss#4647:7": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show help#4640:35": {
+                "type": "BOOLEAN",
+                "value": true
+              },
+              "Show label#4640:28": {
+                "type": "BOOLEAN",
+                "value": true
+              },
+              "Help text label#4640:42": {
+                "type": "TEXT",
+                "value": "This is helper text"
+              },
+              "Show left icon#4647:14": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Input text#702:207": {
+                "type": "TEXT",
+                "value": "Select a status..."
+              },
+              "State": {
+                "value": "Placeholder",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "width": 568,
+            "height": 78
+          },
+          {
+            "id": "8003:17825",
+            "name": "InputGroup",
+            "type": "INSTANCE",
+            "visible": true,
+            "componentProperties": {
+              "Help text label#4640:42": {
+                "type": "TEXT",
+                "value": "Helper text label"
+              },
+              "Show help#4640:35": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show label#4640:28": {
+                "type": "BOOLEAN",
+                "value": true
+              },
+              "State": {
+                "value": "Placeholder",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Add-on": {
+                "value": "Right",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "layoutMode": "VERTICAL",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "width": 568,
+            "height": 54
+          },
+          {
+            "id": "8003:18146",
+            "name": "Divider",
+            "type": "INSTANCE",
+            "visible": true,
+            "componentProperties": {
+              "Direction": {
+                "value": "Horizontal",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "layoutMode": "HORIZONTAL",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "FIXED",
+            "width": 568,
+            "height": 1
+          },
+          {
+            "id": "8003:18111",
+            "name": "Button Group",
+            "type": "FRAME",
+            "visible": true,
+            "layoutMode": "HORIZONTAL",
+            "layoutSizingHorizontal": "FILL",
+            "layoutSizingVertical": "HUG",
+            "primaryAxisAlignItems": "SPACE_BETWEEN",
+            "counterAxisAlignItems": "MIN",
+            "layoutWrap": "NO_WRAP",
+            "paddingLeft": 0,
+            "paddingRight": 0,
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "itemSpacing": 16,
+            "layoutGrids": [],
+            "width": 568,
+            "minWidth": null,
+            "height": 32,
+            "fills": [],
+            "children": [
+              {
+                "id": "8003:17837",
+                "name": "Button",
+                "type": "INSTANCE",
+                "visible": true,
+                "componentProperties": {
+                  "Button text#1047:0": {
+                    "type": "TEXT",
+                    "value": "Reset form"
+                  },
+                  "Show icon right#698:62": {
+                    "type": "BOOLEAN",
+                    "value": false
+                  },
+                  "Icon-left type#698:31": {
+                    "type": "INSTANCE_SWAP",
+                    "value": "8003:18125",
+                    "preferredValues": [],
+                    "propInfo": {
+                      "id": "8003:18125",
+                      "name": "Style=Regular",
+                      "parentName": "arrow-rotate-left"
+                    }
+                  },
+                  "Icon right type#698:93": {
+                    "type": "INSTANCE_SWAP",
+                    "value": "2204:808",
+                    "preferredValues": [],
+                    "propInfo": {
+                      "id": "2204:808",
+                      "name": "Style=Solid",
+                      "parentName": "caret-down"
+                    }
+                  },
+                  "Show icon left#698:0": {
+                    "type": "BOOLEAN",
+                    "value": true
+                  },
+                  "Type": {
+                    "value": "Tertiary",
+                    "type": "VARIANT",
+                    "boundVariables": {}
+                  },
+                  "State": {
+                    "value": "Default",
+                    "type": "VARIANT",
+                    "boundVariables": {}
+                  },
+                  "Size": {
+                    "value": "Regular",
+                    "type": "VARIANT",
+                    "boundVariables": {}
+                  }
+                },
+                "layoutMode": "HORIZONTAL",
+                "layoutSizingHorizontal": "HUG",
+                "layoutSizingVertical": "FIXED",
+                "width": 128,
+                "height": 32
+              },
+              {
+                "id": "8003:18145",
+                "name": "Main buttons",
+                "type": "FRAME",
+                "visible": true,
+                "layoutMode": "HORIZONTAL",
+                "layoutSizingHorizontal": "HUG",
+                "layoutSizingVertical": "HUG",
+                "primaryAxisAlignItems": "MIN",
+                "counterAxisAlignItems": "CENTER",
+                "layoutWrap": "NO_WRAP",
+                "paddingLeft": 0,
+                "paddingRight": 0,
+                "paddingTop": 0,
+                "paddingBottom": 0,
+                "itemSpacing": 16,
+                "layoutGrids": [],
+                "width": 171,
+                "minWidth": null,
+                "height": 32,
+                "fills": [],
+                "children": [
+                  {
+                    "id": "8003:18079",
+                    "name": "Button",
+                    "type": "INSTANCE",
+                    "visible": true,
+                    "componentProperties": {
+                      "Icon-left type#698:31": {
+                        "type": "INSTANCE_SWAP",
+                        "value": "2203:687",
+                        "preferredValues": [],
+                        "propInfo": {
+                          "id": "2203:687",
+                          "name": "Style=Regular",
+                          "parentName": "arrows-up-down-left-right"
+                        }
+                      },
+                      "Button text#1047:0": {
+                        "type": "TEXT",
+                        "value": "Cancel"
+                      },
+                      "Show icon right#698:62": {
+                        "type": "BOOLEAN",
+                        "value": false
+                      },
+                      "Icon right type#698:93": {
+                        "type": "INSTANCE_SWAP",
+                        "value": "2204:808",
+                        "preferredValues": [],
+                        "propInfo": {
+                          "id": "2204:808",
+                          "name": "Style=Solid",
+                          "parentName": "caret-down"
+                        }
+                      },
+                      "Show icon left#698:0": {
+                        "type": "BOOLEAN",
+                        "value": false
+                      },
+                      "Type": {
+                        "value": "Secondary",
+                        "type": "VARIANT",
+                        "boundVariables": {}
+                      },
+                      "State": {
+                        "value": "Default",
+                        "type": "VARIANT",
+                        "boundVariables": {}
+                      },
+                      "Size": {
+                        "value": "Regular",
+                        "type": "VARIANT",
+                        "boundVariables": {}
+                      }
+                    },
+                    "layoutMode": "HORIZONTAL",
+                    "layoutSizingHorizontal": "HUG",
+                    "layoutSizingVertical": "FIXED",
+                    "width": 77,
+                    "height": 32
+                  },
+                  {
+                    "id": "8003:18083",
+                    "name": "Button",
+                    "type": "INSTANCE",
+                    "visible": true,
+                    "componentProperties": {
+                      "Icon right type#698:93": {
+                        "type": "INSTANCE_SWAP",
+                        "value": "2204:808",
+                        "preferredValues": [],
+                        "propInfo": {
+                          "id": "2204:808",
+                          "name": "Style=Solid",
+                          "parentName": "caret-down"
+                        }
+                      },
+                      "Icon-left type#698:31": {
+                        "type": "INSTANCE_SWAP",
+                        "value": "2203:687",
+                        "preferredValues": [],
+                        "propInfo": {
+                          "id": "2203:687",
+                          "name": "Style=Regular",
+                          "parentName": "arrows-up-down-left-right"
+                        }
+                      },
+                      "Button text#1047:0": {
+                        "type": "TEXT",
+                        "value": "Submit"
+                      },
+                      "Show icon right#698:62": {
+                        "type": "BOOLEAN",
+                        "value": false
+                      },
+                      "Show icon left#698:0": {
+                        "type": "BOOLEAN",
+                        "value": false
+                      },
+                      "Type": {
+                        "value": "Primary",
+                        "type": "VARIANT",
+                        "boundVariables": {}
+                      },
+                      "State": {
+                        "value": "Default",
+                        "type": "VARIANT",
+                        "boundVariables": {}
+                      },
+                      "Size": {
+                        "value": "Regular",
+                        "type": "VARIANT",
+                        "boundVariables": {}
+                      }
+                    },
+                    "layoutMode": "HORIZONTAL",
+                    "layoutSizingHorizontal": "HUG",
+                    "layoutSizingVertical": "FIXED",
+                    "width": 78,
+                    "height": 32
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

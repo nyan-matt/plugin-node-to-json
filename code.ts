@@ -4,7 +4,7 @@ figma.showUI(__html__, { width: 450, height: 550 });
 // Define types for component properties
 interface ComponentProperty {
   type: string;
-  value: string | boolean | number;
+  value: string | boolean;
   preferredValues?: Array<{
     type: string;
     key?: string;
@@ -35,43 +35,92 @@ type PropertyWithVariables = Paint & {
   boundVariables?: BoundVariables;
 }
 
+interface FixturePayload {
+  generatedAt: string;
+  profile: "implement";
+  settings: {
+    includeLayout: boolean;
+    includeProps: boolean;
+    includeObservedText: boolean;
+    includeNestedInventory: boolean;
+    includeVariableBindings: boolean;
+    includeHidden: boolean;
+    excludeNamePatterns: string[];
+  };
+  selectionNode: SerializedNode;
+}
+
 // Listen for messages from the UI
 figma.ui.onmessage = async (msg) => {
-  if (msg.type === 'get-selected-node') {
-    // Get the current selection
-    const selection = figma.currentPage.selection;
-    
-    // Handle empty selection
-    if (selection.length === 0) {
-      figma.ui.postMessage({
-        type: 'error',
-        message: 'No node selected. Please select a node in Figma.'
-      });
-      return;
-    }
-    
-    // Handle multiple selections
-    if (selection.length > 1) {
-      figma.ui.postMessage({
-        type: 'error',
-        message: 'Multiple nodes selected. Please select only one node.'
-      });
-      return;
-    }
-    
-    // Get selected node
-    const selectedNode = selection[0];
-    
+  if (msg.type === 'get-selected-node' || msg.type === 'export-fixture') {
+    const selectedNode = getSingleSelectedNode();
+    if (!selectedNode) return;
+
     // Convert node to JSON representation
     const nodeJson = await serializeNode(selectedNode);
-    
-    // Send data back to UI
+
+    if (msg.type === 'get-selected-node') {
+      figma.ui.postMessage({
+        type: 'node-data',
+        data: nodeJson
+      });
+      return;
+    }
+
+    const fixtureData: FixturePayload = {
+      generatedAt: new Date().toISOString(),
+      profile: "implement",
+      settings: {
+        includeLayout: true,
+        includeProps: true,
+        includeObservedText: true,
+        includeNestedInventory: true,
+        includeVariableBindings: false,
+        includeHidden: false,
+        excludeNamePatterns: ["AppShell", "SideNav"]
+      },
+      selectionNode: nodeJson
+    };
+
     figma.ui.postMessage({
-      type: 'node-data',
-      data: nodeJson
+      type: 'fixture-data',
+      fileName: toFixtureFileName(nodeJson.name),
+      data: fixtureData
     });
   }
 };
+
+function getSingleSelectedNode(): SceneNode | null {
+  const selection = figma.currentPage.selection;
+
+  if (selection.length === 0) {
+    figma.ui.postMessage({
+      type: 'error',
+      message: 'No node selected. Please select a node in Figma.'
+    });
+    return null;
+  }
+
+  if (selection.length > 1) {
+    figma.ui.postMessage({
+      type: 'error',
+      message: 'Multiple nodes selected. Please select only one node.'
+    });
+    return null;
+  }
+
+  return selection[0];
+}
+
+function toFixtureFileName(name: string): string {
+  const safeName = (name || 'selection')
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
+  return `${safeName || 'selection'}.fixture.json`;
+}
 
 // Define a proper return type for our serialized node
 interface SerializedNode {
@@ -91,6 +140,10 @@ interface SerializedNode {
   fontSize?: number | PluginAPI["mixed"];
   fontName?: FontName | PluginAPI["mixed"];
   componentProperties?: Record<string, ComponentProperty>;
+  mainComponentId?: string;
+  mainComponentName?: string;
+  mainComponentSetId?: string;
+  mainComponentSetName?: string;
   layoutMode?: "NONE" | "HORIZONTAL" | "VERTICAL";
   layoutWrap?: "NO_WRAP" | "WRAP";
   layoutSizingHorizontal?: "FIXED" | "HUG" | "FILL";
@@ -141,6 +194,18 @@ async function serializeNode(node: BaseNode): Promise<SerializedNode> {
     // Add position and dimension properties
     obj.width = instanceNode.width;
     obj.height = instanceNode.height;
+
+    const mainComponent = await instanceNode.getMainComponentAsync();
+    if (mainComponent) {
+      obj.mainComponentId = mainComponent.id;
+      obj.mainComponentName = mainComponent.name;
+
+      const parent = mainComponent.parent;
+      if (parent && parent.type === 'COMPONENT_SET') {
+        obj.mainComponentSetId = parent.id;
+        obj.mainComponentSetName = parent.name;
+      }
+    }
     
     // Return early - don't process children for instances
     return obj;
