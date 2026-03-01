@@ -57,6 +57,13 @@ Primary near-term focus: quality pass on fixtures and extraction fidelity.
 - Include clearer warnings for unresolved mappings and low-confidence classifications.
 - Keep debug-heavy data in `debug` profile only.
 
+## Maybe / Revisit Later
+
+1. Component-specific exposed-instance rollups
+- Example: for `TabView`, derive a compact visible-tab summary from `exposedInstances`.
+- Keep as a deferred decision until more fixture review is complete.
+- If adopted later, keep it out of the core layout tree and add as optional derived data.
+
 ## 3) Future State Considerations (Downstream Usage)
 
 These are intentionally deferred for later implementation, but should guide schema decisions now.
@@ -104,3 +111,16 @@ Future solution:
 - Require explicit mismatch reporting when blueprint and code conventions diverge.
 - Keep schema stable/versioned and evolve intentionally.
 - Preserve provenance and confidence metadata for agent decision transparency.
+
+### E. Optional summary generation (non-canonical enhancement)
+
+Problem:
+- Fully generic natural-language summaries are brittle across different app/layout structures.
+
+Future solution:
+- Keep `nodes[]` as canonical source of truth.
+- Derive an intermediate deterministic `summaryModel` from canonical nodes.
+- Render human-readable summaries with:
+  - pattern-specific templates for known semantic patterns/components
+  - neutral deterministic fallback text for unknown structures
+- Treat this summary as optional/assistive output, never as required canonical data.

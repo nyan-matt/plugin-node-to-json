@@ -57,15 +57,93 @@ function collectNestedInstanceNames(node, acc = new Set()) {
   return acc;
 }
 
+function normalizePropKey(rawKey) {
+  if (!rawKey) return '';
+  return String(rawKey)
+    .replace(/#[0-9]+:[0-9]+$/, '')
+    .replace(/[_-]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function getBooleanPropState(componentProperties, normalizedName) {
+  if (!componentProperties || typeof componentProperties !== 'object') return null;
+  const target = normalizedName.toLowerCase();
+
+  for (const [rawKey, prop] of Object.entries(componentProperties)) {
+    const cleanName = normalizePropKey(rawKey).toLowerCase();
+    if (cleanName === target && prop && prop.type === 'BOOLEAN' && typeof prop.value === 'boolean') {
+      return prop.value;
+    }
+  }
+
+  return null;
+}
+
+function getPropActivity(normalizedName, componentProperties) {
+  const key = normalizedName.toLowerCase();
+
+  if (key.includes('icon left type')) {
+    const showLeft = getBooleanPropState(componentProperties, 'Show icon left');
+    if (showLeft === false) {
+      return { active: false, activeReason: 'Show icon left=false' };
+    }
+  }
+
+  if (key.includes('icon right type')) {
+    const showRight = getBooleanPropState(componentProperties, 'Show icon right');
+    if (showRight === false) {
+      return { active: false, activeReason: 'Show icon right=false' };
+    }
+  }
+
+  return { active: true, activeReason: null };
+}
+
+function resolvePropValue(prop) {
+  if (!prop || typeof prop !== 'object') {
+    return { value: null, resolved: null };
+  }
+
+  if (prop.type === 'INSTANCE_SWAP') {
+    const resolved = prop.propInfo
+      ? {
+          componentId: prop.propInfo.id || null,
+          componentName: prop.propInfo.name || null,
+          componentSetName: prop.propInfo.parentName || null,
+        }
+      : null;
+
+    return {
+      value: resolved && resolved.componentSetName ? resolved.componentSetName : prop.value,
+      resolved,
+    };
+  }
+
+  return { value: prop.value, resolved: null };
+}
+
 function toDeclaredProps(componentProperties) {
   if (!componentProperties || typeof componentProperties !== 'object') return [];
 
-  return Object.entries(componentProperties).map(([name, prop]) => ({
-    name,
-    value: prop ? prop.value : null,
-    source: 'declared',
-    confidence: 1,
-  }));
+  return Object.entries(componentProperties).map(([rawKey, prop]) => {
+    const name = normalizePropKey(rawKey);
+    const { active, activeReason } = getPropActivity(name, componentProperties);
+    const { value, resolved } = resolvePropValue(prop);
+
+    return {
+      rawKey,
+      name,
+      type: prop ? prop.type : null,
+      rawValue: prop ? prop.value : null,
+      value,
+      source: 'declared',
+      confidence: 1,
+      active,
+      activeReason,
+      resolved,
+    };
+  });
 }
 
 function classifyNode(node) {
@@ -233,12 +311,25 @@ function buildBlueprintNode({ node, parentId, depth, settings, warnings, stats, 
       ? Array.from(collectNestedInstanceNames(node)).sort()
       : [];
 
-      blueprintNode.component = {
-        instance: {
+    const exposedInstances = Array.isArray(node.exposedInstances)
+      ? node.exposedInstances.map((exposed) => ({
+          id: exposed.id,
+          displayName: exposed.name,
+          canonicalName: exposed.mainComponentSetName || exposed.mainComponentName || exposed.name || null,
+          canonicalId: exposed.mainComponentId || exposed.id || null,
+          canonicalVariantName: exposed.mainComponentName || null,
+          visible: exposed.visible !== false,
+          props: settings.includeProps ? toDeclaredProps(exposed.componentProperties) : [],
+        }))
+      : [];
+
+    blueprintNode.component = {
+      instance: {
         componentId: canonicalId,
         componentName: canonicalName,
       },
       nestedInventory: nestedNames,
+      exposedInstances,
     };
 
     if (settings.includeProps) {

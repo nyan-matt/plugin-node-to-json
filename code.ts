@@ -162,8 +162,20 @@ interface SerializedNode {
   layoutGrow?: number;
   minWidth?: number | null;
   maxWidth?: number;
+  exposedInstances?: SerializedExposedInstance[];
   
   // Add other properties as needed
+}
+
+interface SerializedExposedInstance {
+  id: string;
+  name: string;
+  visible?: boolean;
+  componentProperties?: Record<string, ComponentProperty>;
+  mainComponentId?: string;
+  mainComponentName?: string;
+  mainComponentSetId?: string;
+  mainComponentSetName?: string;
 }
 
 // Helper function to serialize a node and its children to a plain object
@@ -205,6 +217,12 @@ async function serializeNode(node: BaseNode): Promise<SerializedNode> {
         obj.mainComponentSetId = parent.id;
         obj.mainComponentSetName = parent.name;
       }
+    }
+
+    if (instanceNode.exposedInstances.length > 0) {
+      obj.exposedInstances = await Promise.all(
+        instanceNode.exposedInstances.map((child) => serializeExposedInstance(child))
+      );
     }
     
     // Return early - don't process children for instances
@@ -279,6 +297,29 @@ async function serializeNode(node: BaseNode): Promise<SerializedNode> {
     obj.y = textNode.y;
   }
   
+  return obj;
+}
+
+async function serializeExposedInstance(instanceNode: InstanceNode): Promise<SerializedExposedInstance> {
+  const obj: SerializedExposedInstance = {
+    id: instanceNode.id,
+    name: instanceNode.name,
+    visible: instanceNode.visible,
+    componentProperties: await enhanceInstanceSwapProps(instanceNode.componentProperties)
+  };
+
+  const mainComponent = await instanceNode.getMainComponentAsync();
+  if (mainComponent) {
+    obj.mainComponentId = mainComponent.id;
+    obj.mainComponentName = mainComponent.name;
+
+    const parent = mainComponent.parent;
+    if (parent && parent.type === 'COMPONENT_SET') {
+      obj.mainComponentSetId = parent.id;
+      obj.mainComponentSetName = parent.name;
+    }
+  }
+
   return obj;
 }
 

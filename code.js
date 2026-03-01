@@ -97,6 +97,9 @@ async function serializeNode(node) {
                 obj.mainComponentSetName = parent.name;
             }
         }
+        if (instanceNode.exposedInstances.length > 0) {
+            obj.exposedInstances = await Promise.all(instanceNode.exposedInstances.map((child) => serializeExposedInstance(child)));
+        }
         // Return early - don't process children for instances
         return obj;
     }
@@ -157,6 +160,25 @@ async function serializeNode(node) {
         obj.lineHeight = textNode.lineHeight;
         obj.x = textNode.x;
         obj.y = textNode.y;
+    }
+    return obj;
+}
+async function serializeExposedInstance(instanceNode) {
+    const obj = {
+        id: instanceNode.id,
+        name: instanceNode.name,
+        visible: instanceNode.visible,
+        componentProperties: await enhanceInstanceSwapProps(instanceNode.componentProperties)
+    };
+    const mainComponent = await instanceNode.getMainComponentAsync();
+    if (mainComponent) {
+        obj.mainComponentId = mainComponent.id;
+        obj.mainComponentName = mainComponent.name;
+        const parent = mainComponent.parent;
+        if (parent && parent.type === 'COMPONENT_SET') {
+            obj.mainComponentSetId = parent.id;
+            obj.mainComponentSetName = parent.name;
+        }
     }
     return obj;
 }

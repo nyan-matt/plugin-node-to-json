@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-01T00:41:55.366Z",
+  "generatedAt": "2026-03-01T18:29:24.618Z",
   "profile": "implement",
   "settings": {
     "includeLayout": true,
@@ -55,7 +55,339 @@
         "mainComponentId": "13:18254",
         "mainComponentName": "Type=Default",
         "mainComponentSetId": "250:119796",
-        "mainComponentSetName": "TabView"
+        "mainComponentSetName": "TabView",
+        "exposedInstances": [
+          {
+            "id": "I8003:19413;13:18185",
+            "name": "TabSlot-1",
+            "visible": true,
+            "componentProperties": {
+              "Show icon#2436:564": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show badge#13:104": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Label#13:99": {
+                "type": "TEXT",
+                "value": "Run method"
+              },
+              "State": {
+                "value": "Selected",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Has focus?": {
+                "value": "False",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "12:15872",
+            "mainComponentName": "State=Selected, Has focus?=False",
+            "mainComponentSetId": "12:15873",
+            "mainComponentSetName": "TabView/tab"
+          },
+          {
+            "id": "I8003:19413;13:18192",
+            "name": "TabSlot-2",
+            "visible": true,
+            "componentProperties": {
+              "Show icon#2436:564": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show badge#13:104": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Label#13:99": {
+                "type": "TEXT",
+                "value": "Assays"
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Has focus?": {
+                "value": "False",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "12:15870",
+            "mainComponentName": "State=Default, Has focus?=False",
+            "mainComponentSetId": "12:15873",
+            "mainComponentSetName": "TabView/tab"
+          },
+          {
+            "id": "I8003:19413;13:18188",
+            "name": "TabSlot-3",
+            "visible": true,
+            "componentProperties": {
+              "Show icon#2436:564": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show badge#13:104": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Label#13:99": {
+                "type": "TEXT",
+                "value": "Plate setup"
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Has focus?": {
+                "value": "False",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "12:15870",
+            "mainComponentName": "State=Default, Has focus?=False",
+            "mainComponentSetId": "12:15873",
+            "mainComponentSetName": "TabView/tab"
+          },
+          {
+            "id": "I8003:19413;13:18195",
+            "name": "TabSlot-4",
+            "visible": false,
+            "componentProperties": {
+              "Show icon#2436:564": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show badge#13:104": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Label#13:99": {
+                "type": "TEXT",
+                "value": "Tab label"
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Has focus?": {
+                "value": "False",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "12:15870",
+            "mainComponentName": "State=Default, Has focus?=False",
+            "mainComponentSetId": "12:15873",
+            "mainComponentSetName": "TabView/tab"
+          },
+          {
+            "id": "I8003:19413;13:18198",
+            "name": "TabSlot-5",
+            "visible": false,
+            "componentProperties": {
+              "Show icon#2436:564": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show badge#13:104": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Label#13:99": {
+                "type": "TEXT",
+                "value": "Tab label"
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Has focus?": {
+                "value": "False",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "12:15870",
+            "mainComponentName": "State=Default, Has focus?=False",
+            "mainComponentSetId": "12:15873",
+            "mainComponentSetName": "TabView/tab"
+          },
+          {
+            "id": "I8003:19413;13:18201",
+            "name": "TabSlot-6",
+            "visible": false,
+            "componentProperties": {
+              "Show icon#2436:564": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show badge#13:104": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Label#13:99": {
+                "type": "TEXT",
+                "value": "Tab label"
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Has focus?": {
+                "value": "False",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "12:15870",
+            "mainComponentName": "State=Default, Has focus?=False",
+            "mainComponentSetId": "12:15873",
+            "mainComponentSetName": "TabView/tab"
+          },
+          {
+            "id": "I8003:19413;13:18204",
+            "name": "TabSlot-7",
+            "visible": false,
+            "componentProperties": {
+              "Show icon#2436:564": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show badge#13:104": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Label#13:99": {
+                "type": "TEXT",
+                "value": "Tab label"
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Has focus?": {
+                "value": "False",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "12:15870",
+            "mainComponentName": "State=Default, Has focus?=False",
+            "mainComponentSetId": "12:15873",
+            "mainComponentSetName": "TabView/tab"
+          },
+          {
+            "id": "I8003:19413;13:18207",
+            "name": "TabSlot-8",
+            "visible": false,
+            "componentProperties": {
+              "Show icon#2436:564": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show badge#13:104": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Label#13:99": {
+                "type": "TEXT",
+                "value": "Tab label"
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Has focus?": {
+                "value": "False",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "12:15870",
+            "mainComponentName": "State=Default, Has focus?=False",
+            "mainComponentSetId": "12:15873",
+            "mainComponentSetName": "TabView/tab"
+          },
+          {
+            "id": "I8003:19413;13:18210",
+            "name": "TabSlot-9",
+            "visible": false,
+            "componentProperties": {
+              "Show icon#2436:564": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show badge#13:104": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Label#13:99": {
+                "type": "TEXT",
+                "value": "Tab label"
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Has focus?": {
+                "value": "False",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "12:15870",
+            "mainComponentName": "State=Default, Has focus?=False",
+            "mainComponentSetId": "12:15873",
+            "mainComponentSetName": "TabView/tab"
+          },
+          {
+            "id": "I8003:19413;13:18213",
+            "name": "TabSlot-10",
+            "visible": false,
+            "componentProperties": {
+              "Show icon#2436:564": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Show badge#13:104": {
+                "type": "BOOLEAN",
+                "value": false
+              },
+              "Label#13:99": {
+                "type": "TEXT",
+                "value": "Tab label"
+              },
+              "State": {
+                "value": "Default",
+                "type": "VARIANT",
+                "boundVariables": {}
+              },
+              "Has focus?": {
+                "value": "False",
+                "type": "VARIANT",
+                "boundVariables": {}
+              }
+            },
+            "mainComponentId": "12:15870",
+            "mainComponentName": "State=Default, Has focus?=False",
+            "mainComponentSetId": "12:15873",
+            "mainComponentSetName": "TabView/tab"
+          }
+        ]
       },
       {
         "id": "8003:19436",
@@ -160,7 +492,68 @@
                     "mainComponentId": "389:2044",
                     "mainComponentName": "State=Placeholder, Add-on=Right",
                     "mainComponentSetId": "389:1547",
-                    "mainComponentSetName": "InputGroup"
+                    "mainComponentSetName": "InputGroup",
+                    "exposedInstances": [
+                      {
+                        "id": "I8003:19439;389:2045",
+                        "name": "Label",
+                        "visible": false,
+                        "componentProperties": {
+                          "LabelText#7667:4": {
+                            "type": "TEXT",
+                            "value": "Label"
+                          },
+                          "ShowDescription#7667:0": {
+                            "type": "BOOLEAN",
+                            "value": false
+                          },
+                          "Type": {
+                            "value": "Default",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                          }
+                        },
+                        "mainComponentId": "1:2782",
+                        "mainComponentName": "Type=Default",
+                        "mainComponentSetId": "1:2781",
+                        "mainComponentSetName": "Label"
+                      },
+                      {
+                        "id": "I8003:19439;389:2051",
+                        "name": "Trailing Addon",
+                        "visible": true,
+                        "componentProperties": {
+                          "Text trailing#389:5": {
+                            "type": "TEXT",
+                            "value": "µL"
+                          },
+                          "Icon trailing#389:0": {
+                            "type": "INSTANCE_SWAP",
+                            "value": "154:94408",
+                            "preferredValues": [
+                              {
+                                "type": "COMPONENT_SET",
+                                "key": "16049cafebe81f46255cb04487fc05e3f5f542b6"
+                              }
+                            ],
+                            "propInfo": {
+                              "id": "154:94408",
+                              "name": "Size=16px, Style=Mono",
+                              "parentName": "icon/actions/search/"
+                            }
+                          },
+                          "Type": {
+                            "value": "Icon",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                          }
+                        },
+                        "mainComponentId": "389:1871",
+                        "mainComponentName": "Type=Icon",
+                        "mainComponentSetId": "389:1866",
+                        "mainComponentSetName": "InputGroup/.trailing-addon"
+                      }
+                    ]
                   },
                   {
                     "id": "8003:19440",
@@ -607,7 +1000,25 @@
                     "mainComponentId": "63:16096",
                     "mainComponentName": "State=Default",
                     "mainComponentSetId": "66:20544",
-                    "mainComponentSetName": "MenubarLink"
+                    "mainComponentSetName": "MenubarLink",
+                    "exposedInstances": [
+                      {
+                        "id": "I8003:19452;2424:53835",
+                        "name": "ICON",
+                        "visible": true,
+                        "componentProperties": {
+                          "Style": {
+                            "value": "Solid",
+                            "type": "VARIANT",
+                            "boundVariables": {}
+                          }
+                        },
+                        "mainComponentId": "2192:1572",
+                        "mainComponentName": "Style=Solid",
+                        "mainComponentSetId": "2192:1574",
+                        "mainComponentSetName": "trash-can"
+                      }
+                    ]
                   }
                 ]
               }
@@ -659,7 +1070,49 @@
                 "mainComponentId": "59:15133",
                 "mainComponentName": "Type=Default",
                 "mainComponentSetId": "59:15134",
-                "mainComponentSetName": "Paginator"
+                "mainComponentSetName": "Paginator",
+                "exposedInstances": [
+                  {
+                    "id": "I8003:19454;59:15107",
+                    "name": "Paginator/.previous",
+                    "visible": true,
+                    "componentProperties": {
+                      "Show label#52:114": {
+                        "type": "BOOLEAN",
+                        "value": false
+                      },
+                      "State": {
+                        "value": "Disabled",
+                        "type": "VARIANT",
+                        "boundVariables": {}
+                      }
+                    },
+                    "mainComponentId": "52:9581",
+                    "mainComponentName": "State=Disabled",
+                    "mainComponentSetId": "52:9583",
+                    "mainComponentSetName": "Paginator/.previous"
+                  },
+                  {
+                    "id": "I8003:19454;58:15043",
+                    "name": "Paginator/.next",
+                    "visible": true,
+                    "componentProperties": {
+                      "Show label#52:114": {
+                        "type": "BOOLEAN",
+                        "value": false
+                      },
+                      "State": {
+                        "value": "Default",
+                        "type": "VARIANT",
+                        "boundVariables": {}
+                      }
+                    },
+                    "mainComponentId": "52:9585",
+                    "mainComponentName": "State=Default",
+                    "mainComponentSetId": "52:9584",
+                    "mainComponentSetName": "Paginator/.next"
+                  }
+                ]
               },
               {
                 "id": "8003:19455",
@@ -750,7 +1203,25 @@
                 "mainComponentId": "2368:40688",
                 "mainComponentName": "Size=24, Type=Default (no background), State=Default, Rounded=False",
                 "mainComponentSetId": "2368:40705",
-                "mainComponentSetName": "ButtonIcon"
+                "mainComponentSetName": "ButtonIcon",
+                "exposedInstances": [
+                  {
+                    "id": "I8003:19457;2365:39818",
+                    "name": "fa-icon",
+                    "visible": true,
+                    "componentProperties": {
+                      "Style": {
+                        "value": "Regular",
+                        "type": "VARIANT",
+                        "boundVariables": {}
+                      }
+                    },
+                    "mainComponentId": "2177:1001",
+                    "mainComponentName": "Style=Regular",
+                    "mainComponentSetId": "2177:1002",
+                    "mainComponentSetName": "gear-complex"
+                  }
+                ]
               }
             ]
           }

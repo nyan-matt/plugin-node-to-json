@@ -48,7 +48,7 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
 {
   "schema": "figma-blueprint/v1",
   "profile": "implement",
-  "generatedAt": "2026-03-01T00:41:55.366Z",
+  "generatedAt": "2026-03-01T18:29:24.618Z",
   "selection": {
     "id": "8003:19412",
     "name": "Tabbed-layout",
@@ -314,14 +314,722 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
               "componentId": "13:18254",
               "componentName": "TabView"
             },
-            "nestedInventory": []
+            "nestedInventory": [],
+            "exposedInstances": [
+              {
+                "id": "I8003:19413;13:18185",
+                "displayName": "TabSlot-1",
+                "canonicalName": "TabView/tab",
+                "canonicalId": "12:15872",
+                "canonicalVariantName": "State=Selected, Has focus?=False",
+                "visible": true,
+                "props": [
+                  {
+                    "rawKey": "Show icon#2436:564",
+                    "name": "Show icon",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Show badge#13:104",
+                    "name": "Show badge",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Label#13:99",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "rawValue": "Run method",
+                    "value": "Run method",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "State",
+                    "name": "State",
+                    "type": "VARIANT",
+                    "rawValue": "Selected",
+                    "value": "Selected",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Has focus?",
+                    "name": "Has focus?",
+                    "type": "VARIANT",
+                    "rawValue": "False",
+                    "value": "False",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  }
+                ]
+              },
+              {
+                "id": "I8003:19413;13:18192",
+                "displayName": "TabSlot-2",
+                "canonicalName": "TabView/tab",
+                "canonicalId": "12:15870",
+                "canonicalVariantName": "State=Default, Has focus?=False",
+                "visible": true,
+                "props": [
+                  {
+                    "rawKey": "Show icon#2436:564",
+                    "name": "Show icon",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Show badge#13:104",
+                    "name": "Show badge",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Label#13:99",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "rawValue": "Assays",
+                    "value": "Assays",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "State",
+                    "name": "State",
+                    "type": "VARIANT",
+                    "rawValue": "Default",
+                    "value": "Default",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Has focus?",
+                    "name": "Has focus?",
+                    "type": "VARIANT",
+                    "rawValue": "False",
+                    "value": "False",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  }
+                ]
+              },
+              {
+                "id": "I8003:19413;13:18188",
+                "displayName": "TabSlot-3",
+                "canonicalName": "TabView/tab",
+                "canonicalId": "12:15870",
+                "canonicalVariantName": "State=Default, Has focus?=False",
+                "visible": true,
+                "props": [
+                  {
+                    "rawKey": "Show icon#2436:564",
+                    "name": "Show icon",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Show badge#13:104",
+                    "name": "Show badge",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Label#13:99",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "rawValue": "Plate setup",
+                    "value": "Plate setup",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "State",
+                    "name": "State",
+                    "type": "VARIANT",
+                    "rawValue": "Default",
+                    "value": "Default",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Has focus?",
+                    "name": "Has focus?",
+                    "type": "VARIANT",
+                    "rawValue": "False",
+                    "value": "False",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  }
+                ]
+              },
+              {
+                "id": "I8003:19413;13:18195",
+                "displayName": "TabSlot-4",
+                "canonicalName": "TabView/tab",
+                "canonicalId": "12:15870",
+                "canonicalVariantName": "State=Default, Has focus?=False",
+                "visible": false,
+                "props": [
+                  {
+                    "rawKey": "Show icon#2436:564",
+                    "name": "Show icon",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Show badge#13:104",
+                    "name": "Show badge",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Label#13:99",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "rawValue": "Tab label",
+                    "value": "Tab label",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "State",
+                    "name": "State",
+                    "type": "VARIANT",
+                    "rawValue": "Default",
+                    "value": "Default",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Has focus?",
+                    "name": "Has focus?",
+                    "type": "VARIANT",
+                    "rawValue": "False",
+                    "value": "False",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  }
+                ]
+              },
+              {
+                "id": "I8003:19413;13:18198",
+                "displayName": "TabSlot-5",
+                "canonicalName": "TabView/tab",
+                "canonicalId": "12:15870",
+                "canonicalVariantName": "State=Default, Has focus?=False",
+                "visible": false,
+                "props": [
+                  {
+                    "rawKey": "Show icon#2436:564",
+                    "name": "Show icon",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Show badge#13:104",
+                    "name": "Show badge",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Label#13:99",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "rawValue": "Tab label",
+                    "value": "Tab label",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "State",
+                    "name": "State",
+                    "type": "VARIANT",
+                    "rawValue": "Default",
+                    "value": "Default",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Has focus?",
+                    "name": "Has focus?",
+                    "type": "VARIANT",
+                    "rawValue": "False",
+                    "value": "False",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  }
+                ]
+              },
+              {
+                "id": "I8003:19413;13:18201",
+                "displayName": "TabSlot-6",
+                "canonicalName": "TabView/tab",
+                "canonicalId": "12:15870",
+                "canonicalVariantName": "State=Default, Has focus?=False",
+                "visible": false,
+                "props": [
+                  {
+                    "rawKey": "Show icon#2436:564",
+                    "name": "Show icon",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Show badge#13:104",
+                    "name": "Show badge",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Label#13:99",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "rawValue": "Tab label",
+                    "value": "Tab label",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "State",
+                    "name": "State",
+                    "type": "VARIANT",
+                    "rawValue": "Default",
+                    "value": "Default",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Has focus?",
+                    "name": "Has focus?",
+                    "type": "VARIANT",
+                    "rawValue": "False",
+                    "value": "False",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  }
+                ]
+              },
+              {
+                "id": "I8003:19413;13:18204",
+                "displayName": "TabSlot-7",
+                "canonicalName": "TabView/tab",
+                "canonicalId": "12:15870",
+                "canonicalVariantName": "State=Default, Has focus?=False",
+                "visible": false,
+                "props": [
+                  {
+                    "rawKey": "Show icon#2436:564",
+                    "name": "Show icon",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Show badge#13:104",
+                    "name": "Show badge",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Label#13:99",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "rawValue": "Tab label",
+                    "value": "Tab label",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "State",
+                    "name": "State",
+                    "type": "VARIANT",
+                    "rawValue": "Default",
+                    "value": "Default",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Has focus?",
+                    "name": "Has focus?",
+                    "type": "VARIANT",
+                    "rawValue": "False",
+                    "value": "False",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  }
+                ]
+              },
+              {
+                "id": "I8003:19413;13:18207",
+                "displayName": "TabSlot-8",
+                "canonicalName": "TabView/tab",
+                "canonicalId": "12:15870",
+                "canonicalVariantName": "State=Default, Has focus?=False",
+                "visible": false,
+                "props": [
+                  {
+                    "rawKey": "Show icon#2436:564",
+                    "name": "Show icon",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Show badge#13:104",
+                    "name": "Show badge",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Label#13:99",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "rawValue": "Tab label",
+                    "value": "Tab label",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "State",
+                    "name": "State",
+                    "type": "VARIANT",
+                    "rawValue": "Default",
+                    "value": "Default",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Has focus?",
+                    "name": "Has focus?",
+                    "type": "VARIANT",
+                    "rawValue": "False",
+                    "value": "False",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  }
+                ]
+              },
+              {
+                "id": "I8003:19413;13:18210",
+                "displayName": "TabSlot-9",
+                "canonicalName": "TabView/tab",
+                "canonicalId": "12:15870",
+                "canonicalVariantName": "State=Default, Has focus?=False",
+                "visible": false,
+                "props": [
+                  {
+                    "rawKey": "Show icon#2436:564",
+                    "name": "Show icon",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Show badge#13:104",
+                    "name": "Show badge",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Label#13:99",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "rawValue": "Tab label",
+                    "value": "Tab label",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "State",
+                    "name": "State",
+                    "type": "VARIANT",
+                    "rawValue": "Default",
+                    "value": "Default",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Has focus?",
+                    "name": "Has focus?",
+                    "type": "VARIANT",
+                    "rawValue": "False",
+                    "value": "False",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  }
+                ]
+              },
+              {
+                "id": "I8003:19413;13:18213",
+                "displayName": "TabSlot-10",
+                "canonicalName": "TabView/tab",
+                "canonicalId": "12:15870",
+                "canonicalVariantName": "State=Default, Has focus?=False",
+                "visible": false,
+                "props": [
+                  {
+                    "rawKey": "Show icon#2436:564",
+                    "name": "Show icon",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Show badge#13:104",
+                    "name": "Show badge",
+                    "type": "BOOLEAN",
+                    "rawValue": false,
+                    "value": false,
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Label#13:99",
+                    "name": "Label",
+                    "type": "TEXT",
+                    "rawValue": "Tab label",
+                    "value": "Tab label",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "State",
+                    "name": "State",
+                    "type": "VARIANT",
+                    "rawValue": "Default",
+                    "value": "Default",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  },
+                  {
+                    "rawKey": "Has focus?",
+                    "name": "Has focus?",
+                    "type": "VARIANT",
+                    "rawValue": "False",
+                    "value": "False",
+                    "source": "declared",
+                    "confidence": 1,
+                    "active": true,
+                    "activeReason": null,
+                    "resolved": null
+                  }
+                ]
+              }
+            ]
           },
           "props": [
             {
+              "rawKey": "Type",
               "name": "Type",
+              "type": "VARIANT",
+              "rawValue": "Default",
               "value": "Default",
               "source": "declared",
-              "confidence": 1
+              "confidence": 1,
+              "active": true,
+              "activeReason": null,
+              "resolved": null
             }
           ],
           "content": null,
@@ -405,38 +1113,166 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
                           "componentId": "389:2044",
                           "componentName": "InputGroup"
                         },
-                        "nestedInventory": []
+                        "nestedInventory": [],
+                        "exposedInstances": [
+                          {
+                            "id": "I8003:19439;389:2045",
+                            "displayName": "Label",
+                            "canonicalName": "Label",
+                            "canonicalId": "1:2782",
+                            "canonicalVariantName": "Type=Default",
+                            "visible": false,
+                            "props": [
+                              {
+                                "rawKey": "LabelText#7667:4",
+                                "name": "LabelText",
+                                "type": "TEXT",
+                                "rawValue": "Label",
+                                "value": "Label",
+                                "source": "declared",
+                                "confidence": 1,
+                                "active": true,
+                                "activeReason": null,
+                                "resolved": null
+                              },
+                              {
+                                "rawKey": "ShowDescription#7667:0",
+                                "name": "ShowDescription",
+                                "type": "BOOLEAN",
+                                "rawValue": false,
+                                "value": false,
+                                "source": "declared",
+                                "confidence": 1,
+                                "active": true,
+                                "activeReason": null,
+                                "resolved": null
+                              },
+                              {
+                                "rawKey": "Type",
+                                "name": "Type",
+                                "type": "VARIANT",
+                                "rawValue": "Default",
+                                "value": "Default",
+                                "source": "declared",
+                                "confidence": 1,
+                                "active": true,
+                                "activeReason": null,
+                                "resolved": null
+                              }
+                            ]
+                          },
+                          {
+                            "id": "I8003:19439;389:2051",
+                            "displayName": "Trailing Addon",
+                            "canonicalName": "InputGroup/.trailing-addon",
+                            "canonicalId": "389:1871",
+                            "canonicalVariantName": "Type=Icon",
+                            "visible": true,
+                            "props": [
+                              {
+                                "rawKey": "Text trailing#389:5",
+                                "name": "Text trailing",
+                                "type": "TEXT",
+                                "rawValue": "µL",
+                                "value": "µL",
+                                "source": "declared",
+                                "confidence": 1,
+                                "active": true,
+                                "activeReason": null,
+                                "resolved": null
+                              },
+                              {
+                                "rawKey": "Icon trailing#389:0",
+                                "name": "Icon trailing",
+                                "type": "INSTANCE_SWAP",
+                                "rawValue": "154:94408",
+                                "value": "icon/actions/search/",
+                                "source": "declared",
+                                "confidence": 1,
+                                "active": true,
+                                "activeReason": null,
+                                "resolved": {
+                                  "componentId": "154:94408",
+                                  "componentName": "Size=16px, Style=Mono",
+                                  "componentSetName": "icon/actions/search/"
+                                }
+                              },
+                              {
+                                "rawKey": "Type",
+                                "name": "Type",
+                                "type": "VARIANT",
+                                "rawValue": "Icon",
+                                "value": "Icon",
+                                "source": "declared",
+                                "confidence": 1,
+                                "active": true,
+                                "activeReason": null,
+                                "resolved": null
+                              }
+                            ]
+                          }
+                        ]
                       },
                       "props": [
                         {
-                          "name": "Help text label#4640:42",
+                          "rawKey": "Help text label#4640:42",
+                          "name": "Help text label",
+                          "type": "TEXT",
+                          "rawValue": "Helper text label",
                           "value": "Helper text label",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
-                          "name": "Show help#4640:35",
+                          "rawKey": "Show help#4640:35",
+                          "name": "Show help",
+                          "type": "BOOLEAN",
+                          "rawValue": false,
                           "value": false,
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
-                          "name": "Show label#4640:28",
+                          "rawKey": "Show label#4640:28",
+                          "name": "Show label",
+                          "type": "BOOLEAN",
+                          "rawValue": false,
                           "value": false,
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "State",
                           "name": "State",
+                          "type": "VARIANT",
+                          "rawValue": "Placeholder",
                           "value": "Placeholder",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
-                          "name": "Add-on",
+                          "rawKey": "Add-on",
+                          "name": "Add on",
+                          "type": "VARIANT",
+                          "rawValue": "Right",
                           "value": "Right",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         }
                       ],
                       "content": null,
@@ -484,14 +1320,21 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
                           "componentId": "2175:949",
                           "componentName": "filter"
                         },
-                        "nestedInventory": []
+                        "nestedInventory": [],
+                        "exposedInstances": []
                       },
                       "props": [
                         {
+                          "rawKey": "Style",
                           "name": "Style",
+                          "type": "VARIANT",
+                          "rawValue": "Regular",
                           "value": "Regular",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         }
                       ],
                       "content": null,
@@ -539,26 +1382,45 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
                           "componentId": "15:1204",
                           "componentName": "Filter"
                         },
-                        "nestedInventory": []
+                        "nestedInventory": [],
+                        "exposedInstances": []
                       },
                       "props": [
                         {
-                          "name": "Label#15:9",
+                          "rawKey": "Label#15:9",
+                          "name": "Label",
+                          "type": "TEXT",
+                          "rawValue": "Application",
                           "value": "Application",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "State",
                           "name": "State",
+                          "type": "VARIANT",
+                          "rawValue": "Default",
                           "value": "Default",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "Has focus?",
                           "name": "Has focus?",
+                          "type": "VARIANT",
+                          "rawValue": "False",
                           "value": "False",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         }
                       ],
                       "content": null,
@@ -606,26 +1468,45 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
                           "componentId": "15:1204",
                           "componentName": "Filter"
                         },
-                        "nestedInventory": []
+                        "nestedInventory": [],
+                        "exposedInstances": []
                       },
                       "props": [
                         {
-                          "name": "Label#15:9",
+                          "rawKey": "Label#15:9",
+                          "name": "Label",
+                          "type": "TEXT",
+                          "rawValue": "Analyzed",
                           "value": "Analyzed",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "State",
                           "name": "State",
+                          "type": "VARIANT",
+                          "rawValue": "Default",
                           "value": "Default",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "Has focus?",
                           "name": "Has focus?",
+                          "type": "VARIANT",
+                          "rawValue": "False",
                           "value": "False",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         }
                       ],
                       "content": null,
@@ -760,38 +1641,73 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
                           "componentId": "1:3441",
                           "componentName": "Chip"
                         },
-                        "nestedInventory": []
+                        "nestedInventory": [],
+                        "exposedInstances": []
                       },
                       "props": [
                         {
-                          "name": "Left icon#2395:407",
-                          "value": "2202:403",
+                          "rawKey": "Left icon#2395:407",
+                          "name": "Left icon",
+                          "type": "INSTANCE_SWAP",
+                          "rawValue": "2202:403",
+                          "value": "circle-check",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": {
+                            "componentId": "2202:403",
+                            "componentName": "Style=Regular",
+                            "componentSetName": "circle-check"
+                          }
                         },
                         {
-                          "name": "Show left icon#2395:390",
+                          "rawKey": "Show left icon#2395:390",
+                          "name": "Show left icon",
+                          "type": "BOOLEAN",
+                          "rawValue": false,
                           "value": false,
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "State",
                           "name": "State",
+                          "type": "VARIANT",
+                          "rawValue": "Default",
                           "value": "Default",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "Dismissible",
                           "name": "Dismissible",
+                          "type": "VARIANT",
+                          "rawValue": "True",
                           "value": "True",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "Style",
                           "name": "Style",
+                          "type": "VARIANT",
+                          "rawValue": "Komodo",
                           "value": "Komodo",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         }
                       ],
                       "content": null,
@@ -839,38 +1755,73 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
                           "componentId": "1:3441",
                           "componentName": "Chip"
                         },
-                        "nestedInventory": []
+                        "nestedInventory": [],
+                        "exposedInstances": []
                       },
                       "props": [
                         {
-                          "name": "Left icon#2395:407",
-                          "value": "2202:403",
+                          "rawKey": "Left icon#2395:407",
+                          "name": "Left icon",
+                          "type": "INSTANCE_SWAP",
+                          "rawValue": "2202:403",
+                          "value": "circle-check",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": {
+                            "componentId": "2202:403",
+                            "componentName": "Style=Regular",
+                            "componentSetName": "circle-check"
+                          }
                         },
                         {
-                          "name": "Show left icon#2395:390",
+                          "rawKey": "Show left icon#2395:390",
+                          "name": "Show left icon",
+                          "type": "BOOLEAN",
+                          "rawValue": false,
                           "value": false,
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "State",
                           "name": "State",
+                          "type": "VARIANT",
+                          "rawValue": "Default",
                           "value": "Default",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "Dismissible",
                           "name": "Dismissible",
+                          "type": "VARIANT",
+                          "rawValue": "True",
                           "value": "True",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "Style",
                           "name": "Style",
+                          "type": "VARIANT",
+                          "rawValue": "Komodo",
                           "value": "Komodo",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         }
                       ],
                       "content": null,
@@ -918,38 +1869,96 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
                           "componentId": "63:16096",
                           "componentName": "MenubarLink"
                         },
-                        "nestedInventory": []
+                        "nestedInventory": [],
+                        "exposedInstances": [
+                          {
+                            "id": "I8003:19452;2424:53835",
+                            "displayName": "ICON",
+                            "canonicalName": "trash-can",
+                            "canonicalId": "2192:1572",
+                            "canonicalVariantName": "Style=Solid",
+                            "visible": true,
+                            "props": [
+                              {
+                                "rawKey": "Style",
+                                "name": "Style",
+                                "type": "VARIANT",
+                                "rawValue": "Solid",
+                                "value": "Solid",
+                                "source": "declared",
+                                "confidence": 1,
+                                "active": true,
+                                "activeReason": null,
+                                "resolved": null
+                              }
+                            ]
+                          }
+                        ]
                       },
                       "props": [
                         {
-                          "name": "Show icon#2424:523",
+                          "rawKey": "Show icon#2424:523",
+                          "name": "Show icon",
+                          "type": "BOOLEAN",
+                          "rawValue": true,
                           "value": true,
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
-                          "name": "Icon#2424:527",
-                          "value": "2192:1572",
+                          "rawKey": "Icon#2424:527",
+                          "name": "Icon",
+                          "type": "INSTANCE_SWAP",
+                          "rawValue": "2192:1572",
+                          "value": "trash-can",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": {
+                            "componentId": "2192:1572",
+                            "componentName": "Style=Solid",
+                            "componentSetName": "trash-can"
+                          }
                         },
                         {
-                          "name": "Show dropdown caret#68:129",
+                          "rawKey": "Show dropdown caret#68:129",
+                          "name": "Show dropdown caret",
+                          "type": "BOOLEAN",
+                          "rawValue": false,
                           "value": false,
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
-                          "name": "Label#66:126",
+                          "rawKey": "Label#66:126",
+                          "name": "Label",
+                          "type": "TEXT",
+                          "rawValue": "Clear all",
                           "value": "Clear all",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "State",
                           "name": "State",
+                          "type": "VARIANT",
+                          "rawValue": "Default",
                           "value": "Default",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         }
                       ],
                       "content": null,
@@ -1071,20 +2080,102 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
                       "componentId": "59:15133",
                       "componentName": "Paginator"
                     },
-                    "nestedInventory": []
+                    "nestedInventory": [],
+                    "exposedInstances": [
+                      {
+                        "id": "I8003:19454;59:15107",
+                        "displayName": "Paginator/.previous",
+                        "canonicalName": "Paginator/.previous",
+                        "canonicalId": "52:9581",
+                        "canonicalVariantName": "State=Disabled",
+                        "visible": true,
+                        "props": [
+                          {
+                            "rawKey": "Show label#52:114",
+                            "name": "Show label",
+                            "type": "BOOLEAN",
+                            "rawValue": false,
+                            "value": false,
+                            "source": "declared",
+                            "confidence": 1,
+                            "active": true,
+                            "activeReason": null,
+                            "resolved": null
+                          },
+                          {
+                            "rawKey": "State",
+                            "name": "State",
+                            "type": "VARIANT",
+                            "rawValue": "Disabled",
+                            "value": "Disabled",
+                            "source": "declared",
+                            "confidence": 1,
+                            "active": true,
+                            "activeReason": null,
+                            "resolved": null
+                          }
+                        ]
+                      },
+                      {
+                        "id": "I8003:19454;58:15043",
+                        "displayName": "Paginator/.next",
+                        "canonicalName": "Paginator/.next",
+                        "canonicalId": "52:9585",
+                        "canonicalVariantName": "State=Default",
+                        "visible": true,
+                        "props": [
+                          {
+                            "rawKey": "Show label#52:114",
+                            "name": "Show label",
+                            "type": "BOOLEAN",
+                            "rawValue": false,
+                            "value": false,
+                            "source": "declared",
+                            "confidence": 1,
+                            "active": true,
+                            "activeReason": null,
+                            "resolved": null
+                          },
+                          {
+                            "rawKey": "State",
+                            "name": "State",
+                            "type": "VARIANT",
+                            "rawValue": "Default",
+                            "value": "Default",
+                            "source": "declared",
+                            "confidence": 1,
+                            "active": true,
+                            "activeReason": null,
+                            "resolved": null
+                          }
+                        ]
+                      }
+                    ]
                   },
                   "props": [
                     {
-                      "name": "Show load more button#60:118",
+                      "rawKey": "Show load more button#60:118",
+                      "name": "Show load more button",
+                      "type": "BOOLEAN",
+                      "rawValue": false,
                       "value": false,
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     },
                     {
+                      "rawKey": "Type",
                       "name": "Type",
+                      "type": "VARIANT",
+                      "rawValue": "Default",
                       "value": "Default",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     }
                   ],
                   "content": null,
@@ -1132,14 +2223,21 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
                       "componentId": "167:99179",
                       "componentName": "Divider"
                     },
-                    "nestedInventory": []
+                    "nestedInventory": [],
+                    "exposedInstances": []
                   },
                   "props": [
                     {
+                      "rawKey": "Direction",
                       "name": "Direction",
+                      "type": "VARIANT",
+                      "rawValue": "Vertical",
                       "value": "Vertical",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     }
                   ],
                   "content": null,
@@ -1187,14 +2285,21 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
                       "componentId": "101:10898",
                       "componentName": "SelectButton"
                     },
-                    "nestedInventory": []
+                    "nestedInventory": [],
+                    "exposedInstances": []
                   },
                   "props": [
                     {
+                      "rawKey": "Button number",
                       "name": "Button number",
+                      "type": "VARIANT",
+                      "rawValue": "2",
                       "value": "2",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     }
                   ],
                   "content": null,
@@ -1242,38 +2347,96 @@ Selection includes 17 meaningful nodes: 12 componentInstance, 2 componentLike, 2
                       "componentId": "2368:40688",
                       "componentName": "ButtonIcon"
                     },
-                    "nestedInventory": []
+                    "nestedInventory": [],
+                    "exposedInstances": [
+                      {
+                        "id": "I8003:19457;2365:39818",
+                        "displayName": "fa-icon",
+                        "canonicalName": "gear-complex",
+                        "canonicalId": "2177:1001",
+                        "canonicalVariantName": "Style=Regular",
+                        "visible": true,
+                        "props": [
+                          {
+                            "rawKey": "Style",
+                            "name": "Style",
+                            "type": "VARIANT",
+                            "rawValue": "Regular",
+                            "value": "Regular",
+                            "source": "declared",
+                            "confidence": 1,
+                            "active": true,
+                            "activeReason": null,
+                            "resolved": null
+                          }
+                        ]
+                      }
+                    ]
                   },
                   "props": [
                     {
-                      "name": "fa-icon#2369:167",
-                      "value": "2177:1001",
+                      "rawKey": "fa-icon#2369:167",
+                      "name": "fa icon",
+                      "type": "INSTANCE_SWAP",
+                      "rawValue": "2177:1001",
+                      "value": "gear-complex",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": {
+                        "componentId": "2177:1001",
+                        "componentName": "Style=Regular",
+                        "componentSetName": "gear-complex"
+                      }
                     },
                     {
+                      "rawKey": "Size",
                       "name": "Size",
+                      "type": "VARIANT",
+                      "rawValue": "24",
                       "value": "24",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     },
                     {
+                      "rawKey": "Type",
                       "name": "Type",
+                      "type": "VARIANT",
+                      "rawValue": "Default (no background)",
                       "value": "Default (no background)",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     },
                     {
+                      "rawKey": "State",
                       "name": "State",
+                      "type": "VARIANT",
+                      "rawValue": "Default",
                       "value": "Default",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     },
                     {
+                      "rawKey": "Rounded",
                       "name": "Rounded",
+                      "type": "VARIANT",
+                      "rawValue": "False",
                       "value": "False",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     }
                   ],
                   "content": null,

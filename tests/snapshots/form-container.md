@@ -142,20 +142,33 @@ Selection includes 5 meaningful nodes: 3 componentInstance, 2 pattern.
               "componentId": "10:2",
               "componentName": "InputField"
             },
-            "nestedInventory": []
+            "nestedInventory": [],
+            "exposedInstances": []
           },
           "props": [
             {
+              "rawKey": "Label#1",
               "name": "Label#1",
+              "type": "TEXT",
+              "rawValue": "Username",
               "value": "Username",
               "source": "declared",
-              "confidence": 1
+              "confidence": 1,
+              "active": true,
+              "activeReason": null,
+              "resolved": null
             },
             {
+              "rawKey": "State#2",
               "name": "State#2",
+              "type": "VARIANT",
+              "rawValue": "Default",
               "value": "Default",
               "source": "declared",
-              "confidence": 1
+              "confidence": 1,
+              "active": true,
+              "activeReason": null,
+              "resolved": null
             }
           ],
           "content": null,
@@ -203,20 +216,33 @@ Selection includes 5 meaningful nodes: 3 componentInstance, 2 pattern.
               "componentId": "10:3",
               "componentName": "SelectField"
             },
-            "nestedInventory": []
+            "nestedInventory": [],
+            "exposedInstances": []
           },
           "props": [
             {
+              "rawKey": "Label#1",
               "name": "Label#1",
+              "type": "TEXT",
+              "rawValue": "Role",
               "value": "Role",
               "source": "declared",
-              "confidence": 1
+              "confidence": 1,
+              "active": true,
+              "activeReason": null,
+              "resolved": null
             },
             {
+              "rawKey": "Value#2",
               "name": "Value#2",
+              "type": "TEXT",
+              "rawValue": "Administrator",
               "value": "Administrator",
               "source": "declared",
-              "confidence": 1
+              "confidence": 1,
+              "active": true,
+              "activeReason": null,
+              "resolved": null
             }
           ],
           "content": null,
@@ -276,26 +302,45 @@ Selection includes 5 meaningful nodes: 3 componentInstance, 2 pattern.
                   "componentId": "10:5",
                   "componentName": "Button"
                 },
-                "nestedInventory": []
+                "nestedInventory": [],
+                "exposedInstances": []
               },
               "props": [
                 {
+                  "rawKey": "Variant#1",
                   "name": "Variant#1",
+                  "type": "VARIANT",
+                  "rawValue": "Primary",
                   "value": "Primary",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
+                  "rawKey": "Size#2",
                   "name": "Size#2",
+                  "type": "VARIANT",
+                  "rawValue": "Medium",
                   "value": "Medium",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
+                  "rawKey": "Label#3",
                   "name": "Label#3",
+                  "type": "TEXT",
+                  "rawValue": "Submit",
                   "value": "Submit",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 }
               ],
               "content": null,

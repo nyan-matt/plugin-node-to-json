@@ -268,26 +268,45 @@ Selection includes 14 meaningful nodes: 10 componentInstance, 2 componentLike, 2
               "componentId": "8003:17781",
               "componentName": "SectionHeader"
             },
-            "nestedInventory": []
+            "nestedInventory": [],
+            "exposedInstances": []
           },
           "props": [
             {
-              "name": "Show description#632:8",
+              "rawKey": "Show description#632:8",
+              "name": "Show description",
+              "type": "BOOLEAN",
+              "rawValue": true,
               "value": true,
               "source": "declared",
-              "confidence": 1
+              "confidence": 1,
+              "active": true,
+              "activeReason": null,
+              "resolved": null
             },
             {
-              "name": "Description#632:7",
+              "rawKey": "Description#632:7",
+              "name": "Description",
+              "type": "TEXT",
+              "rawValue": "Please fill out the form items below",
               "value": "Please fill out the form items below",
               "source": "declared",
-              "confidence": 1
+              "confidence": 1,
+              "active": true,
+              "activeReason": null,
+              "resolved": null
             },
             {
-              "name": "Subheading label#632:6",
+              "rawKey": "Subheading label#632:6",
+              "name": "Subheading label",
+              "type": "TEXT",
+              "rawValue": "Settings Form",
               "value": "Settings Form",
               "source": "declared",
-              "confidence": 1
+              "confidence": 1,
+              "active": true,
+              "activeReason": null,
+              "resolved": null
             }
           ],
           "content": null,
@@ -347,62 +366,125 @@ Selection includes 14 meaningful nodes: 10 componentInstance, 2 componentLike, 2
                   "componentId": "8003:17786",
                   "componentName": "InputText"
                 },
-                "nestedInventory": []
+                "nestedInventory": [],
+                "exposedInstances": []
               },
               "props": [
                 {
-                  "name": "Right icon#2404:432",
-                  "value": "2218:2663",
+                  "rawKey": "Right icon#2404:432",
+                  "name": "Right icon",
+                  "type": "INSTANCE_SWAP",
+                  "rawValue": "2218:2663",
+                  "value": "magnifying-glass",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": {
+                    "componentId": "2218:2663",
+                    "componentName": "Style=Solid",
+                    "componentSetName": "magnifying-glass"
+                  }
                 },
                 {
-                  "name": "Left icon#2404:425",
-                  "value": "2218:2663",
+                  "rawKey": "Left icon#2404:425",
+                  "name": "Left icon",
+                  "type": "INSTANCE_SWAP",
+                  "rawValue": "2218:2663",
+                  "value": "magnifying-glass",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": {
+                    "componentId": "2218:2663",
+                    "componentName": "Style=Solid",
+                    "componentSetName": "magnifying-glass"
+                  }
                 },
                 {
-                  "name": "Help text label#4640:42",
+                  "rawKey": "Help text label#4640:42",
+                  "name": "Help text label",
+                  "type": "TEXT",
+                  "rawValue": "Helper text label",
                   "value": "Helper text label",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show help#4640:35",
+                  "rawKey": "Show help#4640:35",
+                  "name": "Show help",
+                  "type": "BOOLEAN",
+                  "rawValue": false,
                   "value": false,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show label#4640:28",
+                  "rawKey": "Show label#4640:28",
+                  "name": "Show label",
+                  "type": "BOOLEAN",
+                  "rawValue": true,
                   "value": true,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show right icon#4637:7",
+                  "rawKey": "Show right icon#4637:7",
+                  "name": "Show right icon",
+                  "type": "BOOLEAN",
+                  "rawValue": false,
                   "value": false,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show left icon#4637:0",
+                  "rawKey": "Show left icon#4637:0",
+                  "name": "Show left icon",
+                  "type": "BOOLEAN",
+                  "rawValue": false,
                   "value": false,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Input text#702:207",
+                  "rawKey": "Input text#702:207",
+                  "name": "Input text",
+                  "type": "TEXT",
+                  "rawValue": "",
                   "value": "",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
+                  "rawKey": "State",
                   "name": "State",
+                  "type": "VARIANT",
+                  "rawValue": "Placeholder",
                   "value": "Placeholder",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 }
               ],
               "content": null,
@@ -450,62 +532,125 @@ Selection includes 14 meaningful nodes: 10 componentInstance, 2 componentLike, 2
                   "componentId": "8003:17876",
                   "componentName": "InputText"
                 },
-                "nestedInventory": []
+                "nestedInventory": [],
+                "exposedInstances": []
               },
               "props": [
                 {
-                  "name": "Right icon#2404:432",
-                  "value": "2218:2663",
+                  "rawKey": "Right icon#2404:432",
+                  "name": "Right icon",
+                  "type": "INSTANCE_SWAP",
+                  "rawValue": "2218:2663",
+                  "value": "magnifying-glass",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": {
+                    "componentId": "2218:2663",
+                    "componentName": "Style=Solid",
+                    "componentSetName": "magnifying-glass"
+                  }
                 },
                 {
-                  "name": "Left icon#2404:425",
-                  "value": "2218:2663",
+                  "rawKey": "Left icon#2404:425",
+                  "name": "Left icon",
+                  "type": "INSTANCE_SWAP",
+                  "rawValue": "2218:2663",
+                  "value": "magnifying-glass",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": {
+                    "componentId": "2218:2663",
+                    "componentName": "Style=Solid",
+                    "componentSetName": "magnifying-glass"
+                  }
                 },
                 {
-                  "name": "Help text label#4640:42",
+                  "rawKey": "Help text label#4640:42",
+                  "name": "Help text label",
+                  "type": "TEXT",
+                  "rawValue": "Helper text label",
                   "value": "Helper text label",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show help#4640:35",
+                  "rawKey": "Show help#4640:35",
+                  "name": "Show help",
+                  "type": "BOOLEAN",
+                  "rawValue": false,
                   "value": false,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show label#4640:28",
+                  "rawKey": "Show label#4640:28",
+                  "name": "Show label",
+                  "type": "BOOLEAN",
+                  "rawValue": true,
                   "value": true,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show right icon#4637:7",
+                  "rawKey": "Show right icon#4637:7",
+                  "name": "Show right icon",
+                  "type": "BOOLEAN",
+                  "rawValue": false,
                   "value": false,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show left icon#4637:0",
+                  "rawKey": "Show left icon#4637:0",
+                  "name": "Show left icon",
+                  "type": "BOOLEAN",
+                  "rawValue": false,
                   "value": false,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Input text#702:207",
+                  "rawKey": "Input text#702:207",
+                  "name": "Input text",
+                  "type": "TEXT",
+                  "rawValue": "",
                   "value": "",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
+                  "rawKey": "State",
                   "name": "State",
+                  "type": "VARIANT",
+                  "rawValue": "Placeholder",
                   "value": "Placeholder",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 }
               ],
               "content": null,
@@ -553,62 +698,125 @@ Selection includes 14 meaningful nodes: 10 componentInstance, 2 componentLike, 2
                   "componentId": "8003:17864",
                   "componentName": "InputText"
                 },
-                "nestedInventory": []
+                "nestedInventory": [],
+                "exposedInstances": []
               },
               "props": [
                 {
-                  "name": "Right icon#2404:432",
-                  "value": "2218:2663",
+                  "rawKey": "Right icon#2404:432",
+                  "name": "Right icon",
+                  "type": "INSTANCE_SWAP",
+                  "rawValue": "2218:2663",
+                  "value": "magnifying-glass",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": {
+                    "componentId": "2218:2663",
+                    "componentName": "Style=Solid",
+                    "componentSetName": "magnifying-glass"
+                  }
                 },
                 {
-                  "name": "Left icon#2404:425",
-                  "value": "2218:2663",
+                  "rawKey": "Left icon#2404:425",
+                  "name": "Left icon",
+                  "type": "INSTANCE_SWAP",
+                  "rawValue": "2218:2663",
+                  "value": "magnifying-glass",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": {
+                    "componentId": "2218:2663",
+                    "componentName": "Style=Solid",
+                    "componentSetName": "magnifying-glass"
+                  }
                 },
                 {
-                  "name": "Help text label#4640:42",
+                  "rawKey": "Help text label#4640:42",
+                  "name": "Help text label",
+                  "type": "TEXT",
+                  "rawValue": "Helper text label",
                   "value": "Helper text label",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show help#4640:35",
+                  "rawKey": "Show help#4640:35",
+                  "name": "Show help",
+                  "type": "BOOLEAN",
+                  "rawValue": false,
                   "value": false,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show label#4640:28",
+                  "rawKey": "Show label#4640:28",
+                  "name": "Show label",
+                  "type": "BOOLEAN",
+                  "rawValue": true,
                   "value": true,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show right icon#4637:7",
+                  "rawKey": "Show right icon#4637:7",
+                  "name": "Show right icon",
+                  "type": "BOOLEAN",
+                  "rawValue": false,
                   "value": false,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show left icon#4637:0",
+                  "rawKey": "Show left icon#4637:0",
+                  "name": "Show left icon",
+                  "type": "BOOLEAN",
+                  "rawValue": false,
                   "value": false,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Input text#702:207",
+                  "rawKey": "Input text#702:207",
+                  "name": "Input text",
+                  "type": "TEXT",
+                  "rawValue": "",
                   "value": "",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
+                  "rawKey": "State",
                   "name": "State",
+                  "type": "VARIANT",
+                  "rawValue": "Placeholder",
                   "value": "Placeholder",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 }
               ],
               "content": null,
@@ -656,62 +864,125 @@ Selection includes 14 meaningful nodes: 10 componentInstance, 2 componentLike, 2
                   "componentId": "8003:17813",
                   "componentName": "Dropdown"
                 },
-                "nestedInventory": []
+                "nestedInventory": [],
+                "exposedInstances": []
               },
               "props": [
                 {
-                  "name": "Left icon#2418:446",
-                  "value": "2207:2429",
+                  "rawKey": "Left icon#2418:446",
+                  "name": "Left icon",
+                  "type": "INSTANCE_SWAP",
+                  "rawValue": "2207:2429",
+                  "value": "circle",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": {
+                    "componentId": "2207:2429",
+                    "componentName": "Style=Solid",
+                    "componentSetName": "circle"
+                  }
                 },
                 {
-                  "name": "Right icon#2418:439",
-                  "value": "2204:839",
+                  "rawKey": "Right icon#2418:439",
+                  "name": "Right icon",
+                  "type": "INSTANCE_SWAP",
+                  "rawValue": "2204:839",
+                  "value": "chevron-down",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": {
+                    "componentId": "2204:839",
+                    "componentName": "Style=Regular",
+                    "componentSetName": "chevron-down"
+                  }
                 },
                 {
-                  "name": "Show dismiss#4647:7",
+                  "rawKey": "Show dismiss#4647:7",
+                  "name": "Show dismiss",
+                  "type": "BOOLEAN",
+                  "rawValue": false,
                   "value": false,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show help#4640:35",
+                  "rawKey": "Show help#4640:35",
+                  "name": "Show help",
+                  "type": "BOOLEAN",
+                  "rawValue": true,
                   "value": true,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show label#4640:28",
+                  "rawKey": "Show label#4640:28",
+                  "name": "Show label",
+                  "type": "BOOLEAN",
+                  "rawValue": true,
                   "value": true,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Help text label#4640:42",
+                  "rawKey": "Help text label#4640:42",
+                  "name": "Help text label",
+                  "type": "TEXT",
+                  "rawValue": "This is helper text",
                   "value": "This is helper text",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show left icon#4647:14",
+                  "rawKey": "Show left icon#4647:14",
+                  "name": "Show left icon",
+                  "type": "BOOLEAN",
+                  "rawValue": false,
                   "value": false,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Input text#702:207",
+                  "rawKey": "Input text#702:207",
+                  "name": "Input text",
+                  "type": "TEXT",
+                  "rawValue": "Select a status...",
                   "value": "Select a status...",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
+                  "rawKey": "State",
                   "name": "State",
+                  "type": "VARIANT",
+                  "rawValue": "Placeholder",
                   "value": "Placeholder",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 }
               ],
               "content": null,
@@ -759,38 +1030,69 @@ Selection includes 14 meaningful nodes: 10 componentInstance, 2 componentLike, 2
                   "componentId": "8003:17825",
                   "componentName": "InputGroup"
                 },
-                "nestedInventory": []
+                "nestedInventory": [],
+                "exposedInstances": []
               },
               "props": [
                 {
-                  "name": "Help text label#4640:42",
+                  "rawKey": "Help text label#4640:42",
+                  "name": "Help text label",
+                  "type": "TEXT",
+                  "rawValue": "Helper text label",
                   "value": "Helper text label",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show help#4640:35",
+                  "rawKey": "Show help#4640:35",
+                  "name": "Show help",
+                  "type": "BOOLEAN",
+                  "rawValue": false,
                   "value": false,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Show label#4640:28",
+                  "rawKey": "Show label#4640:28",
+                  "name": "Show label",
+                  "type": "BOOLEAN",
+                  "rawValue": true,
                   "value": true,
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
+                  "rawKey": "State",
                   "name": "State",
+                  "type": "VARIANT",
+                  "rawValue": "Placeholder",
                   "value": "Placeholder",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 },
                 {
-                  "name": "Add-on",
+                  "rawKey": "Add-on",
+                  "name": "Add on",
+                  "type": "VARIANT",
+                  "rawValue": "Right",
                   "value": "Right",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 }
               ],
               "content": null,
@@ -838,14 +1140,21 @@ Selection includes 14 meaningful nodes: 10 componentInstance, 2 componentLike, 2
                   "componentId": "8003:18146",
                   "componentName": "Divider"
                 },
-                "nestedInventory": []
+                "nestedInventory": [],
+                "exposedInstances": []
               },
               "props": [
                 {
+                  "rawKey": "Direction",
                   "name": "Direction",
+                  "type": "VARIANT",
+                  "rawValue": "Horizontal",
                   "value": "Horizontal",
                   "source": "declared",
-                  "confidence": 1
+                  "confidence": 1,
+                  "active": true,
+                  "activeReason": null,
+                  "resolved": null
                 }
               ],
               "content": null,
@@ -905,56 +1214,113 @@ Selection includes 14 meaningful nodes: 10 componentInstance, 2 componentLike, 2
                       "componentId": "8003:17837",
                       "componentName": "Button"
                     },
-                    "nestedInventory": []
+                    "nestedInventory": [],
+                    "exposedInstances": []
                   },
                   "props": [
                     {
-                      "name": "Button text#1047:0",
+                      "rawKey": "Button text#1047:0",
+                      "name": "Button text",
+                      "type": "TEXT",
+                      "rawValue": "Reset form",
                       "value": "Reset form",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     },
                     {
-                      "name": "Show icon right#698:62",
+                      "rawKey": "Show icon right#698:62",
+                      "name": "Show icon right",
+                      "type": "BOOLEAN",
+                      "rawValue": false,
                       "value": false,
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     },
                     {
-                      "name": "Icon-left type#698:31",
-                      "value": "8003:18125",
+                      "rawKey": "Icon-left type#698:31",
+                      "name": "Icon left type",
+                      "type": "INSTANCE_SWAP",
+                      "rawValue": "8003:18125",
+                      "value": "arrow-rotate-left",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": {
+                        "componentId": "8003:18125",
+                        "componentName": "Style=Regular",
+                        "componentSetName": "arrow-rotate-left"
+                      }
                     },
                     {
-                      "name": "Icon right type#698:93",
-                      "value": "2204:808",
+                      "rawKey": "Icon right type#698:93",
+                      "name": "Icon right type",
+                      "type": "INSTANCE_SWAP",
+                      "rawValue": "2204:808",
+                      "value": "caret-down",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": false,
+                      "activeReason": "Show icon right=false",
+                      "resolved": {
+                        "componentId": "2204:808",
+                        "componentName": "Style=Solid",
+                        "componentSetName": "caret-down"
+                      }
                     },
                     {
-                      "name": "Show icon left#698:0",
+                      "rawKey": "Show icon left#698:0",
+                      "name": "Show icon left",
+                      "type": "BOOLEAN",
+                      "rawValue": true,
                       "value": true,
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     },
                     {
+                      "rawKey": "Type",
                       "name": "Type",
+                      "type": "VARIANT",
+                      "rawValue": "Tertiary",
                       "value": "Tertiary",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     },
                     {
+                      "rawKey": "State",
                       "name": "State",
+                      "type": "VARIANT",
+                      "rawValue": "Default",
                       "value": "Default",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     },
                     {
+                      "rawKey": "Size",
                       "name": "Size",
+                      "type": "VARIANT",
+                      "rawValue": "Regular",
                       "value": "Regular",
                       "source": "declared",
-                      "confidence": 1
+                      "confidence": 1,
+                      "active": true,
+                      "activeReason": null,
+                      "resolved": null
                     }
                   ],
                   "content": null,
@@ -1014,56 +1380,113 @@ Selection includes 14 meaningful nodes: 10 componentInstance, 2 componentLike, 2
                           "componentId": "8003:18079",
                           "componentName": "Button"
                         },
-                        "nestedInventory": []
+                        "nestedInventory": [],
+                        "exposedInstances": []
                       },
                       "props": [
                         {
-                          "name": "Icon-left type#698:31",
-                          "value": "2203:687",
+                          "rawKey": "Icon-left type#698:31",
+                          "name": "Icon left type",
+                          "type": "INSTANCE_SWAP",
+                          "rawValue": "2203:687",
+                          "value": "arrows-up-down-left-right",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": false,
+                          "activeReason": "Show icon left=false",
+                          "resolved": {
+                            "componentId": "2203:687",
+                            "componentName": "Style=Regular",
+                            "componentSetName": "arrows-up-down-left-right"
+                          }
                         },
                         {
-                          "name": "Button text#1047:0",
+                          "rawKey": "Button text#1047:0",
+                          "name": "Button text",
+                          "type": "TEXT",
+                          "rawValue": "Cancel",
                           "value": "Cancel",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
-                          "name": "Show icon right#698:62",
+                          "rawKey": "Show icon right#698:62",
+                          "name": "Show icon right",
+                          "type": "BOOLEAN",
+                          "rawValue": false,
                           "value": false,
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
-                          "name": "Icon right type#698:93",
-                          "value": "2204:808",
+                          "rawKey": "Icon right type#698:93",
+                          "name": "Icon right type",
+                          "type": "INSTANCE_SWAP",
+                          "rawValue": "2204:808",
+                          "value": "caret-down",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": false,
+                          "activeReason": "Show icon right=false",
+                          "resolved": {
+                            "componentId": "2204:808",
+                            "componentName": "Style=Solid",
+                            "componentSetName": "caret-down"
+                          }
                         },
                         {
-                          "name": "Show icon left#698:0",
+                          "rawKey": "Show icon left#698:0",
+                          "name": "Show icon left",
+                          "type": "BOOLEAN",
+                          "rawValue": false,
                           "value": false,
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "Type",
                           "name": "Type",
+                          "type": "VARIANT",
+                          "rawValue": "Secondary",
                           "value": "Secondary",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "State",
                           "name": "State",
+                          "type": "VARIANT",
+                          "rawValue": "Default",
                           "value": "Default",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "Size",
                           "name": "Size",
+                          "type": "VARIANT",
+                          "rawValue": "Regular",
                           "value": "Regular",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         }
                       ],
                       "content": null,
@@ -1111,56 +1534,113 @@ Selection includes 14 meaningful nodes: 10 componentInstance, 2 componentLike, 2
                           "componentId": "8003:18083",
                           "componentName": "Button"
                         },
-                        "nestedInventory": []
+                        "nestedInventory": [],
+                        "exposedInstances": []
                       },
                       "props": [
                         {
-                          "name": "Icon right type#698:93",
-                          "value": "2204:808",
+                          "rawKey": "Icon right type#698:93",
+                          "name": "Icon right type",
+                          "type": "INSTANCE_SWAP",
+                          "rawValue": "2204:808",
+                          "value": "caret-down",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": false,
+                          "activeReason": "Show icon right=false",
+                          "resolved": {
+                            "componentId": "2204:808",
+                            "componentName": "Style=Solid",
+                            "componentSetName": "caret-down"
+                          }
                         },
                         {
-                          "name": "Icon-left type#698:31",
-                          "value": "2203:687",
+                          "rawKey": "Icon-left type#698:31",
+                          "name": "Icon left type",
+                          "type": "INSTANCE_SWAP",
+                          "rawValue": "2203:687",
+                          "value": "arrows-up-down-left-right",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": false,
+                          "activeReason": "Show icon left=false",
+                          "resolved": {
+                            "componentId": "2203:687",
+                            "componentName": "Style=Regular",
+                            "componentSetName": "arrows-up-down-left-right"
+                          }
                         },
                         {
-                          "name": "Button text#1047:0",
+                          "rawKey": "Button text#1047:0",
+                          "name": "Button text",
+                          "type": "TEXT",
+                          "rawValue": "Submit",
                           "value": "Submit",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
-                          "name": "Show icon right#698:62",
+                          "rawKey": "Show icon right#698:62",
+                          "name": "Show icon right",
+                          "type": "BOOLEAN",
+                          "rawValue": false,
                           "value": false,
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
-                          "name": "Show icon left#698:0",
+                          "rawKey": "Show icon left#698:0",
+                          "name": "Show icon left",
+                          "type": "BOOLEAN",
+                          "rawValue": false,
                           "value": false,
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "Type",
                           "name": "Type",
+                          "type": "VARIANT",
+                          "rawValue": "Primary",
                           "value": "Primary",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "State",
                           "name": "State",
+                          "type": "VARIANT",
+                          "rawValue": "Default",
                           "value": "Default",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         },
                         {
+                          "rawKey": "Size",
                           "name": "Size",
+                          "type": "VARIANT",
+                          "rawValue": "Regular",
                           "value": "Regular",
                           "source": "declared",
-                          "confidence": 1
+                          "confidence": 1,
+                          "active": true,
+                          "activeReason": null,
+                          "resolved": null
                         }
                       ],
                       "content": null,
